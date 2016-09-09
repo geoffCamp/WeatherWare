@@ -1,0 +1,17 @@
+cloudy night: http://commons.wikimedia.org/wiki/File:British_Night_Sky_(6819479424).jpg - Tom Bayly from England
+clear night: http://commons.wikimedia.org/wiki/File:Forest-night-sky-spruce-trees-stars_-_West_Virginia_-_ForestWander.jpg -  http://www.ForestWander.com
+treessunshine: no reference required
+starynight: http://commons.wikimedia.org/wiki/File:Night_Photography.jpg
+overcast: http://commons.wikimedia.org/wiki/File:A_little_overcast_over_Aberdeen_harbour_-_geograph.org.uk_-_1468944.jpg
+cloudyday(unused): http://commons.wikimedia.org/wiki/File:Cumulus_clouds_in_fair_weather.jpeg
+storm: http://commons.wikimedia.org/wiki/File:-lightning-wallpapers.jpg
+rain:http://commons.wikimedia.org/wiki/File:Rain_in_Budalla,_Sri_Lanka.jpg
+rain2:http://commons.wikimedia.org/wiki/File:Here_comes_rain_again.jpg
+sun:http://commons.wikimedia.org/wiki/File:The_Sun.jpg
+sunrise:http://commons.wikimedia.org/wiki/File:Sunrise_-_Gold_River_NS.JPG
+sunset:http://commons.wikimedia.org/wiki/File:Sunset_Marina.JPG
+cloudynight2 http://commons.wikimedia.org/wiki/File:Lunar_Corona.jpg
+cloudyday http://commons.wikimedia.org/wiki/File:Clouds.JPG
+cold: http://commons.wikimedia.org/wiki/File:Icicles_Partnachklamm_rb.jpg
+cloudnight3: http://commons.wikimedia.org/wiki/File:CUMULUS_a_la_pleine_lune_YLEDUC.jpg
+cloudynight 4: http://commons.wikimedia.org/wiki/File:Dark_night.jpg

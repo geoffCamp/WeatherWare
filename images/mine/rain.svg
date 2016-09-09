@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg5975"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="rain.svg">
+  <defs
+     id="defs5977">
+    <filter
+       inkscape:collect="always"
+       id="filter6586"
+       x="-0.50428774"
+       width="2.0085755"
+       y="-0.47958185"
+       height="1.9591637">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="72.921202"
+         id="feGaussianBlur6588" />
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter6586-5"
+       x="-0.50428772"
+       width="2.0085754"
+       y="-0.47958186"
+       height="1.9591637">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="72.921202"
+         id="feGaussianBlur6588-2" />
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter13923"
+       x="-0.059949383"
+       width="1.1198988"
+       y="-0.21567155"
+       height="1.4313431">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="10.526826"
+         id="feGaussianBlur13925" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="-77.071541"
+     inkscape:cy="557.95807"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1680"
+     inkscape:window-height="988"
+     inkscape:window-x="1592"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5980">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer16"
+     inkscape:label="shadow">
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.71238942;fill:#141414;fill-opacity:1;stroke:none;filter:url(#filter13923)"
+       id="path13155"
+       sodipodi:cx="335"
+       sodipodi:cy="820.93359"
+       sodipodi:rx="210.71428"
+       sodipodi:ry="58.57143"
+       d="m 545.71428,820.93359 a 210.71428,58.57143 0 1 1 -421.42856,0 210.71428,58.57143 0 1 1 421.42856,0 z"
+       transform="matrix(1.0470135,0,0,0.75291841,14.250487,254.98045)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\rain.png"
+       inkscape:export-xdpi="33.716393"
+       inkscape:export-ydpi="33.716393" />
+  </g>
+  <g
+     inkscape:label="bottom"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g6533"
+       style="fill:#204fa3;fill-opacity:1"
+       transform="matrix(1.2922629,0,0,1,-40.945202,0)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\rain.png"
+       inkscape:export-xdpi="33.716393"
+       inkscape:export-ydpi="33.716393">
+      <path
+         transform="matrix(0.45115164,-1.0408332,0.8963804,0.60419554,-217.80479,373.20503)"
+         d="m 305.71428,378.07648 c 0,46.54971 -35.17763,84.28571 -78.57143,84.28571 -43.3938,0 -78.57142,-37.736 -78.57142,-84.28571 0,-46.54972 35.17762,-84.28572 78.57142,-84.28572 43.3938,0 78.57143,37.736 78.57143,84.28572 z"
+         sodipodi:ry="84.285713"
+         sodipodi:rx="78.571426"
+         sodipodi:cy="378.07648"
+         sodipodi:cx="227.14285"
+         id="path6491"
+         style="fill:#204fa3;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(1.2254898,0,-0.30588088,1.4366198,-191.4318,0.41732971)"
+         d="m 548.57144,278.79074 c 0,28.00873 -22.38576,50.71429 -50,50.71429 -27.61424,0 -50,-22.70556 -50,-50.71429 0,-28.00873 22.38576,-50.71429 50,-50.71429 27.61424,0 50,22.70556 50,50.71429 z"
+         sodipodi:ry="50.714287"
+         sodipodi:rx="50"
+         sodipodi:cy="278.79074"
+         sodipodi:cx="498.57144"
+         id="path6493"
+         style="fill:#204fa3;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(1.2195122,0,0,1.0833333,-138.29268,-43.053993)"
+         d="m 512.85714,465.21933 c 0,28.40321 -26.22333,51.42857 -58.57143,51.42857 -32.34811,0 -58.57143,-23.02536 -58.57143,-51.42857 0,-28.40321 26.22332,-51.42857 58.57143,-51.42857 32.3481,0 58.57143,23.02536 58.57143,51.42857 z"
+         sodipodi:ry="51.42857"
+         sodipodi:rx="58.57143"
+         sodipodi:cy="465.21933"
+         sodipodi:cx="454.28571"
+         id="path6495"
+         style="fill:#204fa3;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(1,0,0.26086955,1,-143.28702,-55.714285)"
+         d="m 414.2857,593.07648 c 0,45.36625 -25.90352,82.14286 -57.85714,82.14286 -31.95362,0 -57.85715,-36.77661 -57.85715,-82.14286 0,-45.36625 25.90353,-82.14286 57.85715,-82.14286 31.95362,0 57.85714,36.77661 57.85714,82.14286 z"
+         sodipodi:ry="82.14286"
+         sodipodi:rx="57.857143"
+         sodipodi:cy="593.07648"
+         sodipodi:cx="356.42856"
+         id="path6497"
+         style="fill:#204fa3;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(1,0,-0.34899328,1,333.60482,-154.28571)"
+         d="m 228.57142,681.64789 c 0,58.77888 -39.33498,106.42857 -87.85714,106.42857 -48.522159,0 -87.85714,-47.64969 -87.85714,-106.42857 0,-58.77888 39.334981,-106.42858 87.85714,-106.42858 48.52216,0 87.85714,47.6497 87.85714,106.42858 z"
+         sodipodi:ry="106.42857"
+         sodipodi:rx="87.85714"
+         sodipodi:cy="681.64789"
+         sodipodi:cx="140.71428"
+         id="path6499"
+         style="fill:#204fa3;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+    </g>
+    <path
+       sodipodi:type="arc"
+       style="fill:#0000ff;fill-opacity:0.92021269;stroke:none"
+       id="path6491-9"
+       sodipodi:cx="227.14285"
+       sodipodi:cy="378.07648"
+       sodipodi:rx="78.571426"
+       sodipodi:ry="84.285713"
+       d="m 305.71428,378.07648 a 78.571426,84.285713 0 1 1 -157.14285,0 78.571426,84.285713 0 1 1 157.14285,0 z"
+       transform="matrix(0.45115164,-1.0408332,0.8963804,0.60419554,-717.13908,132.80984)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#0000ff;fill-opacity:0.92021269;stroke:none"
+       id="path6493-8"
+       sodipodi:cx="498.57144"
+       sodipodi:cy="278.79074"
+       sodipodi:rx="50"
+       sodipodi:ry="50.714287"
+       d="m 548.57144,278.79074 a 50,50.714287 0 1 1 -100,0 50,50.714287 0 1 1 100,0 z"
+       transform="matrix(1.2254898,0,-0.30588088,1.4366198,-690.76609,-239.97785)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#0000ff;fill-opacity:0.92021269;stroke:none"
+       id="path6495-6"
+       sodipodi:cx="454.28571"
+       sodipodi:cy="465.21933"
+       sodipodi:rx="58.57143"
+       sodipodi:ry="51.42857"
+       d="m 512.85714,465.21933 a 58.57143,51.42857 0 1 1 -117.14286,0 58.57143,51.42857 0 1 1 117.14286,0 z"
+       transform="matrix(1.2195122,0,0,1.0833333,-637.62697,-283.44917)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#0000ff;fill-opacity:0.92021269;stroke:none"
+       id="path6497-6"
+       sodipodi:cx="356.42856"
+       sodipodi:cy="593.07648"
+       sodipodi:rx="57.857143"
+       sodipodi:ry="82.14286"
+       d="m 414.2857,593.07648 a 57.857143,82.14286 0 1 1 -115.71429,0 57.857143,82.14286 0 1 1 115.71429,0 z"
+       transform="matrix(1,0,0.26086955,1,-642.62131,-296.10946)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#0000ff;fill-opacity:0.92021269;stroke:none"
+       id="path6499-2"
+       sodipodi:cx="140.71428"
+       sodipodi:cy="681.64789"
+       sodipodi:rx="87.85714"
+       sodipodi:ry="106.42857"
+       d="m 228.57142,681.64789 a 87.85714,106.42857 0 1 1 -175.71428,0 87.85714,106.42857 0 1 1 175.71428,0 z"
+       transform="matrix(1,0,-0.34899328,1,-165.72947,-394.68089)" />
+    <g
+       id="g6533-3-3"
+       style="fill:#0e69bd;fill-opacity:0.95744683;filter:url(#filter6586-5)"
+       transform="matrix(0.51458198,0,0,0.25179878,160.22762,383.90284)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\rain.png"
+       inkscape:export-xdpi="33.716393"
+       inkscape:export-ydpi="33.716393">
+      <path
+         transform="matrix(0.45115164,-1.0408332,0.8963804,0.60419554,-217.80479,373.20503)"
+         d="m 305.71428,378.07648 c 0,46.54971 -35.17763,84.28571 -78.57143,84.28571 -43.3938,0 -78.57142,-37.736 -78.57142,-84.28571 0,-46.54972 35.17762,-84.28572 78.57142,-84.28572 43.3938,0 78.57143,37.736 78.57143,84.28572 z"
+         sodipodi:ry="84.285713"
+         sodipodi:rx="78.571426"
+         sodipodi:cy="378.07648"
+         sodipodi:cx="227.14285"
+         id="path6491-8-2"
+         style="fill:#0e69bd;fill-opacity:0.95744683;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(1.2254898,0,-0.30588088,1.4366198,-191.4318,0.41732971)"
+         d="m 548.57144,278.79074 c 0,28.00873 -22.38576,50.71429 -50,50.71429 -27.61424,0 -50,-22.70556 -50,-50.71429 0,-28.00873 22.38576,-50.71429 50,-50.71429 27.61424,0 50,22.70556 50,50.71429 z"
+         sodipodi:ry="50.714287"
+         sodipodi:rx="50"
+         sodipodi:cy="278.79074"
+         sodipodi:cx="498.57144"
+         id="path6493-2-4"
+         style="fill:#0e69bd;fill-opacity:0.95744683;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(1.2195122,0,0,1.0833333,-138.29268,-43.053993)"
+         d="m 512.85714,465.21933 c 0,28.40321 -26.22333,51.42857 -58.57143,51.42857 -32.34811,0 -58.57143,-23.02536 -58.57143,-51.42857 0,-28.40321 26.22332,-51.42857 58.57143,-51.42857 32.3481,0 58.57143,23.02536 58.57143,51.42857 z"
+         sodipodi:ry="51.42857"
+         sodipodi:rx="58.57143"
+         sodipodi:cy="465.21933"
+         sodipodi:cx="454.28571"
+         id="path6495-62-6"
+         style="fill:#0e69bd;fill-opacity:0.95744683;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(1,0,0.26086955,1,-143.28702,-55.714285)"
+         d="m 414.2857,593.07648 c 0,45.36625 -25.90352,82.14286 -57.85714,82.14286 -31.95362,0 -57.85715,-36.77661 -57.85715,-82.14286 0,-45.36625 25.90353,-82.14286 57.85715,-82.14286 31.95362,0 57.85714,36.77661 57.85714,82.14286 z"
+         sodipodi:ry="82.14286"
+         sodipodi:rx="57.857143"
+         sodipodi:cy="593.07648"
+         sodipodi:cx="356.42856"
+         id="path6497-7-6"
+         style="fill:#0e69bd;fill-opacity:0.95744683;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(1,0,-0.34899328,1,333.60482,-154.28571)"
+         d="m 228.57142,681.64789 c 0,58.77888 -39.33498,106.42857 -87.85714,106.42857 -48.522159,0 -87.85714,-47.64969 -87.85714,-106.42857 0,-58.77888 39.334981,-106.42858 87.85714,-106.42858 48.52216,0 87.85714,47.6497 87.85714,106.42858 z"
+         sodipodi:ry="106.42857"
+         sodipodi:rx="87.85714"
+         sodipodi:cy="681.64789"
+         sodipodi:cx="140.71428"
+         id="path6499-5-6"
+         style="fill:#0e69bd;fill-opacity:0.95744683;stroke:none"
+         sodipodi:type="arc" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="mid">
+    <g
+       id="g6533-3"
+       style="fill:#6db3f4;fill-opacity:0.95744683;filter:url(#filter6586)"
+       transform="matrix(0.64406337,0,0,0.41440255,174.38385,244.65856)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\rain.png"
+       inkscape:export-xdpi="33.716393"
+       inkscape:export-ydpi="33.716393">
+      <path
+         transform="matrix(0.45115164,-1.0408332,0.8963804,0.60419554,-217.80479,373.20503)"
+         d="m 305.71428,378.07648 c 0,46.54971 -35.17763,84.28571 -78.57143,84.28571 -43.3938,0 -78.57142,-37.736 -78.57142,-84.28571 0,-46.54972 35.17762,-84.28572 78.57142,-84.28572 43.3938,0 78.57143,37.736 78.57143,84.28572 z"
+         sodipodi:ry="84.285713"
+         sodipodi:rx="78.571426"
+         sodipodi:cy="378.07648"
+         sodipodi:cx="227.14285"
+         id="path6491-8"
+         style="fill:#6db3f4;fill-opacity:0.95744683;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(1.2254898,0,-0.30588088,1.4366198,-191.4318,0.41732971)"
+         d="m 548.57144,278.79074 c 0,28.00873 -22.38576,50.71429 -50,50.71429 -27.61424,0 -50,-22.70556 -50,-50.71429 0,-28.00873 22.38576,-50.71429 50,-50.71429 27.61424,0 50,22.70556 50,50.71429 z"
+         sodipodi:ry="50.714287"
+         sodipodi:rx="50"
+         sodipodi:cy="278.79074"
+         sodipodi:cx="498.57144"
+         id="path6493-2"
+         style="fill:#6db3f4;fill-opacity:0.95744683;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(1.2195122,0,0,1.0833333,-138.29268,-43.053993)"
+         d="m 512.85714,465.21933 c 0,28.40321 -26.22333,51.42857 -58.57143,51.42857 -32.34811,0 -58.57143,-23.02536 -58.57143,-51.42857 0,-28.40321 26.22332,-51.42857 58.57143,-51.42857 32.3481,0 58.57143,23.02536 58.57143,51.42857 z"
+         sodipodi:ry="51.42857"
+         sodipodi:rx="58.57143"
+         sodipodi:cy="465.21933"
+         sodipodi:cx="454.28571"
+         id="path6495-62"
+         style="fill:#6db3f4;fill-opacity:0.95744683;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(1,0,0.26086955,1,-143.28702,-55.714285)"
+         d="m 414.2857,593.07648 c 0,45.36625 -25.90352,82.14286 -57.85714,82.14286 -31.95362,0 -57.85715,-36.77661 -57.85715,-82.14286 0,-45.36625 25.90353,-82.14286 57.85715,-82.14286 31.95362,0 57.85714,36.77661 57.85714,82.14286 z"
+         sodipodi:ry="82.14286"
+         sodipodi:rx="57.857143"
+         sodipodi:cy="593.07648"
+         sodipodi:cx="356.42856"
+         id="path6497-7"
+         style="fill:#6db3f4;fill-opacity:0.95744683;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(1,0,-0.34899328,1,333.60482,-154.28571)"
+         d="m 228.57142,681.64789 c 0,58.77888 -39.33498,106.42857 -87.85714,106.42857 -48.522159,0 -87.85714,-47.64969 -87.85714,-106.42857 0,-58.77888 39.334981,-106.42858 87.85714,-106.42858 48.52216,0 87.85714,47.6497 87.85714,106.42858 z"
+         sodipodi:ry="106.42857"
+         sodipodi:rx="87.85714"
+         sodipodi:cy="681.64789"
+         sodipodi:cx="140.71428"
+         id="path6499-5"
+         style="fill:#6db3f4;fill-opacity:0.95744683;stroke:none"
+         sodipodi:type="arc" />
+    </g>
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.97000002;fill:#171783;fill-opacity:1;stroke:#1b1b65;stroke-opacity:1"
+       id="path9145"
+       sodipodi:cx="345.71429"
+       sodipodi:cy="506.64789"
+       sodipodi:rx="77.14286"
+       sodipodi:ry="34.285713"
+       d="m 422.85715,506.64789 a 77.14286,34.285713 0 1 1 -154.28572,0 77.14286,34.285713 0 1 1 154.28572,0 z"
+       transform="translate(-4.2857142,-24.285714)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\rain.png"
+       inkscape:export-xdpi="33.716393"
+       inkscape:export-ydpi="33.716393" />
+    <path
+       style="fill:none;stroke:#000080;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 237.14285,423.79076 c 65.71428,10 65.71428,10 65.71428,10 0,0 -25.85727,1.37015 -37.85714,5.71429 -8.63886,3.12739 -23.57143,14.28571 -23.57143,14.28571"
+       id="path9147"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccac"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\rain.png"
+       inkscape:export-xdpi="33.716393"
+       inkscape:export-ydpi="33.716393" />
+    <path
+       style="fill:none;stroke:#000080;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 428.57142,420.21933 c -65.71428,10 -65.71428,10 -65.71428,10 0,0 25.85727,1.37015 37.85714,5.71429 8.63886,3.12739 23.57143,14.28571 23.57143,14.28571"
+       id="path9147-1"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccac"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\rain.png"
+       inkscape:export-xdpi="33.716393"
+       inkscape:export-ydpi="33.716393" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.97000001999999996;fill:#1a0080;fill-opacity:1;stroke:#1b1b65;stroke-width:3;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path9185"
+       sodipodi:cx="333.57144"
+       sodipodi:cy="153.79076"
+       sodipodi:rx="5"
+       sodipodi:ry="4.2857141"
+       d="m 338.57144,153.79076 a 5,4.2857141 0 1 1 -10,0 5,4.2857141 0 1 1 10,0 z"
+       transform="translate(1.4285714,281.42857)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\rain.png"
+       inkscape:export-xdpi="33.716393"
+       inkscape:export-ydpi="33.716393" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.97000002;fill:#a0d1ff;fill-opacity:1;stroke:none"
+       id="path9232"
+       sodipodi:cx="174.28572"
+       sodipodi:cy="134.50504"
+       sodipodi:rx="5.7142859"
+       sodipodi:ry="6.4285712"
+       d="m 180.00001,134.50504 a 5.7142859,6.4285712 0 1 1 -11.42858,0 5.7142859,6.4285712 0 1 1 11.42858,0 z"
+       transform="matrix(0.62500001,0,0,1,-148.21428,-58.571429)" />
+    <path
+       style="fill:none;stroke:#a0d1ff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -42.500001,75.933611 2.5,-17.14286"
+       id="path9234"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#a0d1ff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -40.000001,59.862181 3.57143,13.92857"
+       id="path9236"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:0.97000002;fill:#a0d1ff;fill-opacity:1;stroke:#a0d1ff;stroke-width:1.07142854;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -41.037911,81.416441 c -0.88826,-0.94551 -1.82069,-3.67204 -1.83557,-5.36738 -0.0205,-2.33158 2.33317,-17.35395 2.71892,-17.35395 0.49622,0 4.13581,13.78196 4.34378,16.44846 0.39805,5.10361 -2.76245,8.8964 -5.22713,6.27287 z m 2.1392,-11.89402 c 0.85132,0.22262 0.84394,0.0592 -0.17427,-3.86303 -0.92565,-3.56565 -0.84433,-3.64508 -1.64556,1.60714 -0.46243,3.03132 -0.4761,2.94466 0.39126,2.48046 0.41294,-0.22099 1.0558,-0.32205 1.42857,-0.22457 z"
+       id="path9238"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:0.97000002;fill:#a0d1ff;fill-opacity:1;stroke:#a0d1ff;stroke-width:1.07142854;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -39.828081,82.700681 c -2.02234,-0.41991 -3.56671,-3.73521 -3.47007,-7.44919 0.0996,-3.8255 2.15349,-16.15553 2.93039,-17.59146 0.72257,-1.33551 5.00903,14.49555 4.99613,18.45204 -0.0136,4.16776 -1.9965,7.09938 -4.45645,6.58861 z m 0.69633,-14.80915 c -0.1393,-0.63839 -0.38295,-1.48214 -0.54145,-1.875 -0.28039,-0.695 -0.28878,-0.69379 -0.31081,0.0447 -0.0125,0.41741 -0.12308,1.26116 -0.24585,1.875 -0.196,0.97998 -0.12722,1.11607 0.56409,1.11607 0.7021,0 0.75989,-0.12562 0.53402,-1.16072 z"
+       id="path9240"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:0.97000002;fill:#a0d1ff;fill-opacity:1;stroke:#a0d1ff;stroke-width:1.07142854;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 239.63813,493.46491 c -1.93093,-0.41991 -2.75359,-3.73521 -1.84845,-7.44919 0.93238,-3.8255 5.6704,-16.15553 6.75989,-17.59146 1.0133,-1.33551 1.85348,14.49555 0.97929,18.45204 -0.92088,4.16776 -3.54197,7.09938 -5.89073,6.58861 z m 3.92015,-14.80915 c -3.3e-4,-0.63839 -0.0603,-1.48214 -0.13328,-1.875 -0.1291,-0.695 -0.13775,-0.69379 -0.32054,0.0447 -0.10337,0.41741 -0.39763,1.26116 -0.65402,1.875 -0.40934,0.97998 -0.37018,1.11607 0.32113,1.11607 0.7021,0 0.78723,-0.12562 0.7867,-1.16072 z"
+       id="path9240-2"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\rain.png"
+       inkscape:export-xdpi="33.716393"
+       inkscape:export-ydpi="33.716393" />
+    <path
+       style="opacity:0.97000002;fill:#a0d1ff;fill-opacity:1;stroke:#a0d1ff;stroke-width:0.67698938;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 448.7996,551.3717 c -1.49792,-0.008 -3.06835,-1.63057 -3.52863,-3.64574 -0.47406,-2.0757 -0.76974,-8.95325 -0.4218,-9.81233 0.32361,-0.799 5.62665,7.28283 6.18102,9.41986 0.58396,2.25114 -0.40854,4.04795 -2.23059,4.03821 z m -1.61417,-8.06895 c -0.18999,-0.32953 -0.48342,-0.75863 -0.65209,-0.95355 -0.29839,-0.34483 -0.30418,-0.34327 -0.21466,0.0577 0.0505,0.22666 0.0921,0.69406 0.0922,1.03867 2.1e-4,0.55016 0.0685,0.61618 0.5601,0.54144 0.49927,-0.0759 0.52247,-0.14996 0.21442,-0.68427 z"
+       id="path9240-9"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\rain.png"
+       inkscape:export-xdpi="33.716393"
+       inkscape:export-ydpi="33.716393" />
+    <path
+       style="opacity:0.97000002;fill:#a0d1ff;fill-opacity:1;stroke:#a0d1ff;stroke-width:0.73145413;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 226.49474,730.0758 c -1.19833,-0.33028 -2.11344,-2.93792 -2.05618,-5.85915 0.059,-3.00894 1.27604,-12.70711 1.73639,-13.83653 0.42816,-1.05045 2.96808,11.40145 2.96044,14.51342 -0.008,3.27815 -1.18302,5.58401 -2.64065,5.18226 z m 0.41261,-11.64811 c -0.0825,-0.50213 -0.22692,-1.16578 -0.32084,-1.47478 -0.16614,-0.54665 -0.17111,-0.5457 -0.18417,0.0352 -0.007,0.32831 -0.0729,0.99196 -0.14568,1.47478 -0.11613,0.7708 -0.0754,0.87784 0.33425,0.87784 0.41603,0 0.45027,-0.0988 0.31644,-0.91296 z"
+       id="path9240-0"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\rain.png"
+       inkscape:export-xdpi="33.716393"
+       inkscape:export-ydpi="33.716393" />
+    <path
+       style="opacity:0.97000002;fill:#a0d1ff;fill-opacity:1;stroke:#a0d1ff;stroke-width:0.73145413;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 329.70903,726.50437 c -1.19833,-0.33028 -2.11344,-2.93792 -2.05618,-5.85915 0.059,-3.00894 1.27604,-12.70711 1.73639,-13.83653 0.42816,-1.05045 2.96808,11.40145 2.96044,14.51342 -0.008,3.27815 -1.18302,5.58401 -2.64065,5.18226 z m 0.41261,-11.64811 c -0.0825,-0.50213 -0.22692,-1.16578 -0.32084,-1.47478 -0.16614,-0.54665 -0.17111,-0.5457 -0.18417,0.0352 -0.007,0.32831 -0.0729,0.99196 -0.14568,1.47478 -0.11613,0.7708 -0.0754,0.87784 0.33425,0.87784 0.41603,0 0.45027,-0.0988 0.31644,-0.91296 z"
+       id="path9240-0-4"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\rain.png"
+       inkscape:export-xdpi="33.716393"
+       inkscape:export-ydpi="33.716393" />
+    <path
+       style="opacity:0.97000002;fill:#a0d1ff;fill-opacity:1;stroke:#a0d1ff;stroke-width:0.73145413;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 327.56617,816.50437 c -1.19833,-0.33028 -2.11344,-2.93792 -2.05618,-5.85915 0.059,-3.00894 1.27604,-12.70711 1.73639,-13.83653 0.42816,-1.05045 2.96808,11.40145 2.96044,14.51342 -0.008,3.27815 -1.18302,5.58401 -2.64065,5.18226 z m 0.41261,-11.64811 c -0.0825,-0.50213 -0.22692,-1.16578 -0.32084,-1.47478 -0.16614,-0.54665 -0.17111,-0.5457 -0.18417,0.0352 -0.007,0.32831 -0.0729,0.99196 -0.14568,1.47478 -0.11613,0.7708 -0.0754,0.87784 0.33425,0.87784 0.41603,0 0.45027,-0.0988 0.31644,-0.91296 z"
+       id="path9240-0-9"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\rain.png"
+       inkscape:export-xdpi="33.716393"
+       inkscape:export-ydpi="33.716393" />
+    <path
+       style="opacity:0.97000002;fill:#a0d1ff;fill-opacity:1;stroke:#a0d1ff;stroke-width:0.73145413;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 446.1376,704.36151 c -1.19833,-0.33028 -2.11344,-2.93792 -2.05618,-5.85915 0.059,-3.00894 1.27604,-12.70711 1.73639,-13.83653 0.42816,-1.05045 2.96808,11.40145 2.96044,14.51342 -0.008,3.27815 -1.18302,5.58401 -2.64065,5.18226 z m 0.41261,-11.64811 c -0.0825,-0.50213 -0.22692,-1.16578 -0.32084,-1.47478 -0.16614,-0.54665 -0.17111,-0.5457 -0.18417,0.0352 -0.007,0.32831 -0.0729,0.99196 -0.14568,1.47478 -0.11613,0.7708 -0.0754,0.87784 0.33425,0.87784 0.41603,0 0.45027,-0.0988 0.31644,-0.91296 z"
+       id="path9240-0-19"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\rain.png"
+       inkscape:export-xdpi="33.716393"
+       inkscape:export-ydpi="33.716393" />
+    <path
+       style="opacity:0.97000002;fill:#a0d1ff;fill-opacity:1;stroke:#a0d1ff;stroke-width:0.73145413;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 451.13761,815.0758 c -1.19833,-0.33028 -2.11344,-2.93792 -2.05618,-5.85915 0.059,-3.00894 1.27604,-12.70711 1.73639,-13.83653 0.42816,-1.05045 2.96808,11.40145 2.96044,14.51342 -0.008,3.27815 -1.18302,5.58401 -2.64065,5.18226 z m 0.41261,-11.64811 c -0.0825,-0.50213 -0.22692,-1.16578 -0.32084,-1.47478 -0.16614,-0.54665 -0.17111,-0.5457 -0.18417,0.0352 -0.007,0.32831 -0.0729,0.99196 -0.14568,1.47478 -0.11613,0.7708 -0.0754,0.87784 0.33425,0.87784 0.41603,0 0.45027,-0.0988 0.31644,-0.91296 z"
+       id="path9240-0-95"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\rain.png"
+       inkscape:export-xdpi="33.716393"
+       inkscape:export-ydpi="33.716393" />
+    <path
+       style="opacity:0.97000002;fill:#a0d1ff;fill-opacity:1;stroke:#a0d1ff;stroke-width:0.73145413;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 513.99474,756.50437 c -1.19833,-0.33028 -2.11344,-2.93792 -2.05618,-5.85915 0.059,-3.00894 1.27604,-12.70711 1.73639,-13.83653 0.42816,-1.05045 2.96808,11.40145 2.96044,14.51342 -0.008,3.27815 -1.18302,5.58401 -2.64065,5.18226 z m 0.41261,-11.64811 c -0.0825,-0.50213 -0.22692,-1.16578 -0.32084,-1.47478 -0.16614,-0.54665 -0.17111,-0.5457 -0.18417,0.0352 -0.007,0.32831 -0.0729,0.99196 -0.14568,1.47478 -0.11613,0.7708 -0.0754,0.87784 0.33425,0.87784 0.41603,0 0.45027,-0.0988 0.31644,-0.91296 z"
+       id="path9240-0-59"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\rain.png"
+       inkscape:export-xdpi="33.716393"
+       inkscape:export-ydpi="33.716393" />
+    <path
+       style="opacity:0.97000002;fill:#a0d1ff;fill-opacity:1;stroke:#a0d1ff;stroke-width:0.73145413;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 228.28046,860.79008 c -1.19833,-0.33028 -2.11344,-2.93792 -2.05618,-5.85915 0.059,-3.00894 1.27604,-12.70711 1.73639,-13.83653 0.42816,-1.05045 2.96808,11.40145 2.96044,14.51342 -0.008,3.27815 -1.18302,5.58401 -2.64065,5.18226 z m 0.41261,-11.64811 c -0.0825,-0.50213 -0.22692,-1.16578 -0.32084,-1.47478 -0.16614,-0.54665 -0.17111,-0.5457 -0.18417,0.0352 -0.007,0.32831 -0.0729,0.99196 -0.14568,1.47478 -0.11613,0.7708 -0.0754,0.87784 0.33425,0.87784 0.41603,0 0.45027,-0.0988 0.31644,-0.91296 z"
+       id="path9240-0-34"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\rain.png"
+       inkscape:export-xdpi="33.716393"
+       inkscape:export-ydpi="33.716393" />
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WeatherWare</string>
+    <string name="hello_world">Please wait...</string>
+    <string name="action_settings">Settings</string>
+
+    <color name="buttonBG">@android:color/holo_green_dark</color>
+    <color name="buttonText">#ffffffff</color>
+    <color name="background">#FF4A4A4A</color>
+    <color name="bodyText">#dddddd</color>
+
+    <string name="baseURL">api.openweathermap.org/data/2.5/weather?q=</string>
+
+    <string-array name="unitTitles">
+        <item
+            >Celsius</item>
+        <item
+            >Fahrenheit</item>
+    </string-array>
+    <string-array name="unitValues">
+        <item
+            >metric</item>
+        <item
+            >imperial</item>
+    </string-array>
+
+</resources>

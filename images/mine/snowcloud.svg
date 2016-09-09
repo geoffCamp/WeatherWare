@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg5975"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="snowcloud.svg">
+  <defs
+     id="defs5977">
+    <filter
+       inkscape:collect="always"
+       id="filter8090"
+       x="-0.29528188"
+       width="1.5905638"
+       y="-0.28081553"
+       height="1.5616311">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="42.698459"
+         id="feGaussianBlur8092" />
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter8162-7"
+       x="-1.0077685"
+       width="3.015537"
+       y="-1.3742298"
+       height="3.7484596">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="17.995866"
+         id="feGaussianBlur8164-6" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter8228"
+       x="-0.72521739"
+       width="2.4504348"
+       y="-0.72521739"
+       height="2.4504348">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="3.4534162"
+         id="feGaussianBlur8230" />
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter8228-8"
+       x="-0.7252174"
+       width="2.4504347"
+       y="-0.7252174"
+       height="2.4504347">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="3.4534162"
+         id="feGaussianBlur8230-1" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter8323"
+       x="-0.72374926"
+       width="2.4474985"
+       y="-0.75269919"
+       height="2.5053984">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="11.200881"
+         id="feGaussianBlur8325" />
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter8323-0"
+       x="-0.72374928"
+       width="2.4474986"
+       y="-0.7526992"
+       height="2.5053985">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="11.200881"
+         id="feGaussianBlur8325-7" />
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter8323-5"
+       x="-0.72374928"
+       width="2.4474986"
+       y="-0.7526992"
+       height="2.5053985">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="11.200881"
+         id="feGaussianBlur8325-2" />
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter8323-8"
+       x="-0.72374928"
+       width="2.4474986"
+       y="-0.7526992"
+       height="2.5053985">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="11.200881"
+         id="feGaussianBlur8325-6" />
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter8323-89"
+       x="-0.72374928"
+       width="2.4474986"
+       y="-0.7526992"
+       height="2.5053985">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="11.200881"
+         id="feGaussianBlur8325-8" />
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter8323-1"
+       x="-0.72374928"
+       width="2.4474986"
+       y="-0.7526992"
+       height="2.5053985">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="11.200881"
+         id="feGaussianBlur8325-5" />
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter8323-1-7"
+       x="-0.72374928"
+       width="2.4474986"
+       y="-0.7526992"
+       height="2.5053985">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="11.200881"
+         id="feGaussianBlur8325-5-3" />
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter13923"
+       x="-0.059949383"
+       width="1.1198988"
+       y="-0.21567155"
+       height="1.4313431">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="10.526826"
+         id="feGaussianBlur13925" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="283.55669"
+     inkscape:cy="495.20542"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer17"
+     showgrid="false"
+     inkscape:window-width="1680"
+     inkscape:window-height="988"
+     inkscape:window-x="1592"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5980">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer17"
+     inkscape:label="shadow">
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.71238942;fill:#141414;fill-opacity:1;stroke:none;filter:url(#filter13923)"
+       id="path13155"
+       sodipodi:cx="335"
+       sodipodi:cy="820.93359"
+       sodipodi:rx="210.71428"
+       sodipodi:ry="58.57143"
+       d="m 545.71428,820.93359 a 210.71428,58.57143 0 1 1 -421.42856,0 210.71428,58.57143 0 1 1 421.42856,0 z"
+       transform="matrix(1.0470135,0,0,0.75291841,40.679049,279.98045)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\snowclouds.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+  <g
+     inkscape:label="bottom"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g6533"
+       style="fill:#ebe7e5;fill-opacity:1"
+       transform="matrix(1.4662879,0,0,0.93778333,-65.325616,16.728)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\snowclouds.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         transform="matrix(0.45115164,-1.0408332,0.8963804,0.60419554,-217.80479,373.20503)"
+         d="m 305.71428,378.07648 c 0,46.54971 -35.17763,84.28571 -78.57143,84.28571 -43.3938,0 -78.57142,-37.736 -78.57142,-84.28571 0,-46.54972 35.17762,-84.28572 78.57142,-84.28572 43.3938,0 78.57143,37.736 78.57143,84.28572 z"
+         sodipodi:ry="84.285713"
+         sodipodi:rx="78.571426"
+         sodipodi:cy="378.07648"
+         sodipodi:cx="227.14285"
+         id="path6491"
+         style="fill:#ebe7e5;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(1.2254898,0,-0.30588088,1.4366198,-191.4318,0.41732971)"
+         d="m 548.57144,278.79074 c 0,28.00873 -22.38576,50.71429 -50,50.71429 -27.61424,0 -50,-22.70556 -50,-50.71429 0,-28.00873 22.38576,-50.71429 50,-50.71429 27.61424,0 50,22.70556 50,50.71429 z"
+         sodipodi:ry="50.714287"
+         sodipodi:rx="50"
+         sodipodi:cy="278.79074"
+         sodipodi:cx="498.57144"
+         id="path6493"
+         style="fill:#ebe7e5;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(1.2195122,0,0,1.0833333,-138.29268,-43.053993)"
+         d="m 512.85714,465.21933 c 0,28.40321 -26.22333,51.42857 -58.57143,51.42857 -32.34811,0 -58.57143,-23.02536 -58.57143,-51.42857 0,-28.40321 26.22332,-51.42857 58.57143,-51.42857 32.3481,0 58.57143,23.02536 58.57143,51.42857 z"
+         sodipodi:ry="51.42857"
+         sodipodi:rx="58.57143"
+         sodipodi:cy="465.21933"
+         sodipodi:cx="454.28571"
+         id="path6495"
+         style="fill:#ebe7e5;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(1,0,0.26086955,1,-143.28702,-55.714285)"
+         d="m 414.2857,593.07648 c 0,45.36625 -25.90352,82.14286 -57.85714,82.14286 -31.95362,0 -57.85715,-36.77661 -57.85715,-82.14286 0,-45.36625 25.90353,-82.14286 57.85715,-82.14286 31.95362,0 57.85714,36.77661 57.85714,82.14286 z"
+         sodipodi:ry="82.14286"
+         sodipodi:rx="57.857143"
+         sodipodi:cy="593.07648"
+         sodipodi:cx="356.42856"
+         id="path6497"
+         style="fill:#ebe7e5;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(1,0,-0.34899328,1,333.60482,-154.28571)"
+         d="m 228.57142,681.64789 c 0,58.77888 -39.33498,106.42857 -87.85714,106.42857 -48.522159,0 -87.85714,-47.64969 -87.85714,-106.42857 0,-58.77888 39.334981,-106.42858 87.85714,-106.42858 48.52216,0 87.85714,47.6497 87.85714,106.42858 z"
+         sodipodi:ry="106.42857"
+         sodipodi:rx="87.85714"
+         sodipodi:cy="681.64789"
+         sodipodi:cx="140.71428"
+         id="path6499"
+         style="fill:#ebe7e5;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="mid">
+    <g
+       id="g6533-3"
+       style="fill:#ffffff;fill-opacity:1;opacity:1;filter:url(#filter8090)"
+       transform="matrix(0.89619909,0,0,0.72118547,93.35694,112.10472)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\snowclouds.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         transform="matrix(0.45115164,-1.0408332,0.8963804,0.60419554,-217.80479,373.20503)"
+         d="m 305.71428,378.07648 c 0,46.54971 -35.17763,84.28571 -78.57143,84.28571 -43.3938,0 -78.57142,-37.736 -78.57142,-84.28571 0,-46.54972 35.17762,-84.28572 78.57142,-84.28572 43.3938,0 78.57143,37.736 78.57143,84.28572 z"
+         sodipodi:ry="84.285713"
+         sodipodi:rx="78.571426"
+         sodipodi:cy="378.07648"
+         sodipodi:cx="227.14285"
+         id="path6491-8"
+         style="fill:#ffffff;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(1.2254898,0,-0.30588088,1.4366198,-191.4318,0.41732971)"
+         d="m 548.57144,278.79074 c 0,28.00873 -22.38576,50.71429 -50,50.71429 -27.61424,0 -50,-22.70556 -50,-50.71429 0,-28.00873 22.38576,-50.71429 50,-50.71429 27.61424,0 50,22.70556 50,50.71429 z"
+         sodipodi:ry="50.714287"
+         sodipodi:rx="50"
+         sodipodi:cy="278.79074"
+         sodipodi:cx="498.57144"
+         id="path6493-2"
+         style="fill:#ffffff;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(1.2195122,0,0,1.0833333,-138.29268,-43.053993)"
+         d="m 512.85714,465.21933 c 0,28.40321 -26.22333,51.42857 -58.57143,51.42857 -32.34811,0 -58.57143,-23.02536 -58.57143,-51.42857 0,-28.40321 26.22332,-51.42857 58.57143,-51.42857 32.3481,0 58.57143,23.02536 58.57143,51.42857 z"
+         sodipodi:ry="51.42857"
+         sodipodi:rx="58.57143"
+         sodipodi:cy="465.21933"
+         sodipodi:cx="454.28571"
+         id="path6495-62"
+         style="fill:#ffffff;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(1,0,0.26086955,1,-143.28702,-55.714285)"
+         d="m 414.2857,593.07648 c 0,45.36625 -25.90352,82.14286 -57.85714,82.14286 -31.95362,0 -57.85715,-36.77661 -57.85715,-82.14286 0,-45.36625 25.90353,-82.14286 57.85715,-82.14286 31.95362,0 57.85714,36.77661 57.85714,82.14286 z"
+         sodipodi:ry="82.14286"
+         sodipodi:rx="57.857143"
+         sodipodi:cy="593.07648"
+         sodipodi:cx="356.42856"
+         id="path6497-7"
+         style="fill:#ffffff;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(1,0,-0.34899328,1,333.60482,-154.28571)"
+         d="m 228.57142,681.64789 c 0,58.77888 -39.33498,106.42857 -87.85714,106.42857 -48.522159,0 -87.85714,-47.64969 -87.85714,-106.42857 0,-58.77888 39.334981,-106.42858 87.85714,-106.42858 48.52216,0 87.85714,47.6497 87.85714,106.42858 z"
+         sodipodi:ry="106.42857"
+         sodipodi:rx="87.85714"
+         sodipodi:cy="681.64789"
+         sodipodi:cx="140.71428"
+         id="path6499-5"
+         style="fill:#ffffff;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+    </g>
+    <path
+       style="fill:none;stroke:#800000;stroke-width:2.68879247;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 300,436.36217 c 0,0 9.82785,20.96528 17.78713,27.14286 7.16509,5.56117 16.23175,6.86667 24.67246,7.14286 8.7386,0.28594 18.21579,-0.34661 25.82002,-5.71429 8.37343,-5.91066 18.93468,-27.14286 18.93468,-27.14286"
+       id="path8135"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csaac"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\snowclouds.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#800000;fill-opacity:0.95744683;stroke:none"
+       id="path8142-7"
+       sodipodi:cx="157.14285"
+       sodipodi:cy="100.93361"
+       sodipodi:rx="21.428572"
+       sodipodi:ry="15.714286"
+       d="m 178.57142,100.93361 a 21.428572,15.714286 0 1 1 -42.85714,0 21.428572,15.714286 0 1 1 42.85714,0 z"
+       transform="matrix(0.44593202,0,0,0.44425066,272.46597,384.82699)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\snowclouds.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:0.95744683;stroke:none;filter:url(#filter8162-7)"
+       id="path8142-2-8"
+       sodipodi:cx="157.14285"
+       sodipodi:cy="100.93361"
+       sodipodi:rx="21.428572"
+       sodipodi:ry="15.714286"
+       d="m 178.57142,100.93361 a 21.428572,15.714286 0 1 1 -42.85714,0 21.428572,15.714286 0 1 1 42.85714,0 z"
+       transform="matrix(0.18098368,0,0,0.11092575,313.70256,416.28909)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\snowclouds.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:0.95744683;stroke:none"
+       id="path8206"
+       sodipodi:cx="315.71429"
+       sodipodi:cy="123.79076"
+       sodipodi:rx="12.857142"
+       sodipodi:ry="11.428572"
+       d="m 328.57144,123.79076 a 12.857142,11.428572 0 1 1 -25.71429,0 12.857142,11.428572 0 1 1 25.71429,0 z"
+       transform="translate(2,268.28571)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\snowclouds.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       transform="translate(67.714277,268.28571)"
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:0.95744683;stroke:none"
+       id="path8206-7"
+       sodipodi:cx="315.71429"
+       sodipodi:cy="123.79076"
+       sodipodi:rx="12.857142"
+       sodipodi:ry="11.428572"
+       d="m 328.57144,123.79076 a 12.857142,11.428572 0 1 1 -25.71429,0 12.857142,11.428572 0 1 1 25.71429,0 z"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\snowclouds.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:0.95744683;stroke:none;filter:url(#filter8228)"
+       id="path8226"
+       sodipodi:cx="298.57144"
+       sodipodi:cy="146.6479"
+       sodipodi:rx="5.7142859"
+       sodipodi:ry="5.7142859"
+       d="m 304.28573,146.6479 a 5.7142859,5.7142859 0 1 1 -11.42857,0 5.7142859,5.7142859 0 1 1 11.42857,0 z"
+       transform="translate(17.714286,241.14286)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\snowclouds.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:0.95744683;stroke:none;filter:url(#filter8228-8)"
+       id="path8226-6"
+       sodipodi:cx="298.57144"
+       sodipodi:cy="146.6479"
+       sodipodi:rx="5.7142859"
+       sodipodi:ry="5.7142859"
+       d="m 304.28573,146.6479 a 5.7142859,5.7142859 0 1 1 -11.42857,0 5.7142859,5.7142859 0 1 1 11.42857,0 z"
+       transform="translate(79.142844,242.57142)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\snowclouds.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#cdcdcd;fill-opacity:0.95744681;stroke:none;opacity:0.66371681000000005"
+       id="path8256"
+       sodipodi:cx="191.42857"
+       sodipodi:cy="703.07648"
+       sodipodi:rx="18.571428"
+       sodipodi:ry="17.857143"
+       d="m 210,703.07648 a 18.571428,17.857143 0 1 1 -37.14285,0 18.571428,17.857143 0 1 1 37.14285,0 z"
+       transform="matrix(0.76923077,0,0,0.68000001,61.318682,193.55589)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\snowclouds.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.97000002;fill:#f2f2f2;fill-opacity:1;stroke:none;filter:url(#filter8323)"
+       id="path8256-9"
+       sodipodi:cx="191.42857"
+       sodipodi:cy="703.07648"
+       sodipodi:rx="18.571428"
+       sodipodi:ry="17.857143"
+       d="m 210,703.07648 a 18.571428,17.857143 0 1 1 -37.14285,0 18.571428,17.857143 0 1 1 37.14285,0 z"
+       transform="matrix(0.28207717,0,0,0.2808619,155.85952,473.60908)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\snowclouds.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.66371681;fill:#cdcdcd;fill-opacity:0.95744683;stroke:none"
+       id="path8256-2"
+       sodipodi:cx="191.42857"
+       sodipodi:cy="703.07648"
+       sodipodi:rx="18.571428"
+       sodipodi:ry="17.857143"
+       d="m 210,703.07648 a 18.571428,17.857143 0 1 1 -37.14285,0 18.571428,17.857143 0 1 1 37.14285,0 z"
+       transform="matrix(0.76923077,0,0,0.68000001,175.6044,266.1958)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\snowclouds.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.97000002;fill:#f2f2f2;fill-opacity:1;stroke:none;filter:url(#filter8323-0)"
+       id="path8256-9-5"
+       sodipodi:cx="191.42857"
+       sodipodi:cy="703.07648"
+       sodipodi:rx="18.571428"
+       sodipodi:ry="17.857143"
+       d="m 210,703.07648 a 18.571428,17.857143 0 1 1 -37.14285,0 18.571428,17.857143 0 1 1 37.14285,0 z"
+       transform="matrix(0.28207717,0,0,0.2808619,267.28808,544.82042)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\snowclouds.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.66371681;fill:#cdcdcd;fill-opacity:0.95744683;stroke:none"
+       id="path8256-1"
+       sodipodi:cx="191.42857"
+       sodipodi:cy="703.07648"
+       sodipodi:rx="18.571428"
+       sodipodi:ry="17.857143"
+       d="m 210,703.07648 a 18.571428,17.857143 0 1 1 -37.14285,0 18.571428,17.857143 0 1 1 37.14285,0 z"
+       transform="matrix(0.76923077,0,0,0.68000001,102.74725,377.62437)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\snowclouds.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.97000002;fill:#f2f2f2;fill-opacity:1;stroke:none;filter:url(#filter8323-5)"
+       id="path8256-9-4"
+       sodipodi:cx="191.42857"
+       sodipodi:cy="703.07648"
+       sodipodi:rx="18.571428"
+       sodipodi:ry="17.857143"
+       d="m 210,703.07648 a 18.571428,17.857143 0 1 1 -37.14285,0 18.571428,17.857143 0 1 1 37.14285,0 z"
+       transform="matrix(0.28207717,0,0,0.2808619,197.28808,657.67756)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\snowclouds.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.66371681;fill:#cdcdcd;fill-opacity:0.95744683;stroke:none"
+       id="path8256-4"
+       sodipodi:cx="191.42857"
+       sodipodi:cy="703.07648"
+       sodipodi:rx="18.571428"
+       sodipodi:ry="17.857143"
+       d="m 210,703.07648 a 18.571428,17.857143 0 1 1 -37.14285,0 18.571428,17.857143 0 1 1 37.14285,0 z"
+       transform="matrix(0.76923077,0,0,0.68000001,249.89011,177.62437)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\snowclouds.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.97000002;fill:#f2f2f2;fill-opacity:1;stroke:none;filter:url(#filter8323-8)"
+       id="path8256-9-6"
+       sodipodi:cx="191.42857"
+       sodipodi:cy="703.07648"
+       sodipodi:rx="18.571428"
+       sodipodi:ry="17.857143"
+       d="m 210,703.07648 a 18.571428,17.857143 0 1 1 -37.14285,0 18.571428,17.857143 0 1 1 37.14285,0 z"
+       transform="matrix(0.28207717,0,0,0.2808619,344.43094,457.67756)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\snowclouds.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.66371681;fill:#cdcdcd;fill-opacity:0.95744683;stroke:none"
+       id="path8256-3"
+       sodipodi:cx="191.42857"
+       sodipodi:cy="703.07648"
+       sodipodi:rx="18.571428"
+       sodipodi:ry="17.857143"
+       d="m 210,703.07648 a 18.571428,17.857143 0 1 1 -37.14285,0 18.571428,17.857143 0 1 1 37.14285,0 z"
+       transform="matrix(0.76923077,0,0,0.68000001,322.74725,339.05295)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\snowclouds.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.97000002;fill:#f2f2f2;fill-opacity:1;stroke:none;filter:url(#filter8323-89)"
+       id="path8256-9-55"
+       sodipodi:cx="191.42857"
+       sodipodi:cy="703.07648"
+       sodipodi:rx="18.571428"
+       sodipodi:ry="17.857143"
+       d="m 210,703.07648 a 18.571428,17.857143 0 1 1 -37.14285,0 18.571428,17.857143 0 1 1 37.14285,0 z"
+       transform="matrix(0.28207717,0,0,0.2808619,417.28808,619.10614)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\snowclouds.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.66371681;fill:#cdcdcd;fill-opacity:0.95744683;stroke:none"
+       id="path8256-5"
+       sodipodi:cx="191.42857"
+       sodipodi:cy="703.07648"
+       sodipodi:rx="18.571428"
+       sodipodi:ry="17.857143"
+       d="m 210,703.07648 a 18.571428,17.857143 0 1 1 -37.14285,0 18.571428,17.857143 0 1 1 37.14285,0 z"
+       transform="matrix(0.76923077,0,0,0.68000001,334.17582,217.62437)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\snowclouds.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.97000002;fill:#f2f2f2;fill-opacity:1;stroke:none;filter:url(#filter8323-1)"
+       id="path8256-9-8"
+       sodipodi:cx="191.42857"
+       sodipodi:cy="703.07648"
+       sodipodi:rx="18.571428"
+       sodipodi:ry="17.857143"
+       d="m 210,703.07648 a 18.571428,17.857143 0 1 1 -37.14285,0 18.571428,17.857143 0 1 1 37.14285,0 z"
+       transform="matrix(0.28207717,0,0,0.2808619,428.71666,497.67756)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\snowclouds.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       transform="translate(189.28571,117.14287)"
+       sodipodi:type="arc"
+       style="opacity:0.97000002;fill:#e9e9e9;fill-opacity:0.95744683;stroke:none"
+       id="path8493-9"
+       sodipodi:cx="47.857143"
+       sodipodi:cy="646.64789"
+       sodipodi:rx="5"
+       sodipodi:ry="5.7142859"
+       d="m 52.857143,646.64789 a 5,5.7142859 0 1 1 -10,0 5,5.7142859 0 1 1 10,0 z"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\snowclouds.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       transform="translate(255,31.42858)"
+       sodipodi:type="arc"
+       style="opacity:0.97000002;fill:#e9e9e9;fill-opacity:0.95744683;stroke:none"
+       id="path8493-5"
+       sodipodi:cx="47.857143"
+       sodipodi:cy="646.64789"
+       sodipodi:rx="5"
+       sodipodi:ry="5.7142859"
+       d="m 52.857143,646.64789 a 5,5.7142859 0 1 1 -10,0 5,5.7142859 0 1 1 10,0 z"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\snowclouds.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       transform="translate(319.28571,264.28572)"
+       sodipodi:type="arc"
+       style="opacity:0.97000002;fill:#e9e9e9;fill-opacity:0.95744683;stroke:none"
+       id="path8493-57"
+       sodipodi:cx="47.857143"
+       sodipodi:cy="646.64789"
+       sodipodi:rx="5"
+       sodipodi:ry="5.7142859"
+       d="m 52.857143,646.64789 a 5,5.7142859 0 1 1 -10,0 5,5.7142859 0 1 1 10,0 z"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\snowclouds.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       transform="translate(353.57143,111.42858)"
+       sodipodi:type="arc"
+       style="opacity:0.97000002;fill:#e9e9e9;fill-opacity:0.95744683;stroke:none"
+       id="path8493-4"
+       sodipodi:cx="47.857143"
+       sodipodi:cy="646.64789"
+       sodipodi:rx="5"
+       sodipodi:ry="5.7142859"
+       d="m 52.857143,646.64789 a 5,5.7142859 0 1 1 -10,0 5,5.7142859 0 1 1 10,0 z"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\snowclouds.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.66371681;fill:#cdcdcd;fill-opacity:0.95744683;stroke:none"
+       id="path8256-5-4"
+       sodipodi:cx="191.42857"
+       sodipodi:cy="703.07648"
+       sodipodi:rx="18.571428"
+       sodipodi:ry="17.857143"
+       d="m 210,703.07648 a 18.571428,17.857143 0 1 1 -37.14285,0 18.571428,17.857143 0 1 1 37.14285,0 z"
+       transform="matrix(0.76923077,0,0,0.68000001,419.89011,273.33866)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\snowclouds.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.97000002;fill:#f2f2f2;fill-opacity:1;stroke:none;filter:url(#filter8323-1-7)"
+       id="path8256-9-8-0"
+       sodipodi:cx="191.42857"
+       sodipodi:cy="703.07648"
+       sodipodi:rx="18.571428"
+       sodipodi:ry="17.857143"
+       d="m 210,703.07648 a 18.571428,17.857143 0 1 1 -37.14285,0 18.571428,17.857143 0 1 1 37.14285,0 z"
+       transform="matrix(0.28207717,0,0,0.2808619,514.43094,553.39185)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\snowclouds.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       transform="translate(516.42857,211.42858)"
+       sodipodi:type="arc"
+       style="opacity:0.97000002;fill:#e9e9e9;fill-opacity:0.95744683;stroke:none"
+       id="path8493-4-8"
+       sodipodi:cx="47.857143"
+       sodipodi:cy="646.64789"
+       sodipodi:rx="5"
+       sodipodi:ry="5.7142859"
+       d="m 52.857143,646.64789 a 5,5.7142859 0 1 1 -10,0 5,5.7142859 0 1 1 10,0 z"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\snowclouds.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+</svg>

@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg9369"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="overcast.svg">
+  <defs
+     id="defs9371">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient22031">
+      <stop
+         style="stop-color:#7e7e7e;stop-opacity:1;"
+         offset="0"
+         id="stop22033" />
+      <stop
+         style="stop-color:#7e7e7e;stop-opacity:0;"
+         offset="1"
+         id="stop22035" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient22023">
+      <stop
+         style="stop-color:#7e7e7e;stop-opacity:1;"
+         offset="0"
+         id="stop22025" />
+      <stop
+         style="stop-color:#7e7e7e;stop-opacity:0;"
+         offset="1"
+         id="stop22027" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient22015">
+      <stop
+         style="stop-color:#7e7e7e;stop-opacity:1;"
+         offset="0"
+         id="stop22017" />
+      <stop
+         style="stop-color:#7e7e7e;stop-opacity:0;"
+         offset="1"
+         id="stop22019" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient22007">
+      <stop
+         style="stop-color:#7e7e7e;stop-opacity:1;"
+         offset="0"
+         id="stop22009" />
+      <stop
+         style="stop-color:#7e7e7e;stop-opacity:0;"
+         offset="1"
+         id="stop22011" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient21999">
+      <stop
+         style="stop-color:#7e7e7e;stop-opacity:1;"
+         offset="0"
+         id="stop22001" />
+      <stop
+         style="stop-color:#7e7e7e;stop-opacity:0;"
+         offset="1"
+         id="stop22003" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient21991">
+      <stop
+         style="stop-color:#7e7e7e;stop-opacity:1;"
+         offset="0"
+         id="stop21993" />
+      <stop
+         style="stop-color:#7e7e7e;stop-opacity:0;"
+         offset="1"
+         id="stop21995" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient19925">
+      <stop
+         style="stop-color:#000000;stop-opacity:0.83783782;"
+         offset="0"
+         id="stop19927" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop19929" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient9946">
+      <stop
+         style="stop-color:#3e2060;stop-opacity:1;"
+         offset="0"
+         id="stop9948" />
+      <stop
+         style="stop-color:#3e2060;stop-opacity:0;"
+         offset="1"
+         id="stop9950" />
+    </linearGradient>
+    <filter
+       inkscape:collect="always"
+       id="filter10002"
+       x="-0.10890425"
+       width="1.2178085"
+       y="-0.23355625"
+       height="1.4671125">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="30.786836"
+         id="feGaussianBlur10004" />
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter10002-2"
+       x="-0.10890425"
+       width="1.2178085"
+       y="-0.23355626"
+       height="1.4671125">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="30.786836"
+         id="feGaussianBlur10004-7" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter13923"
+       x="-0.059949383"
+       width="1.1198988"
+       y="-0.21567155"
+       height="1.4313431">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="10.526826"
+         id="feGaussianBlur13925" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient22015"
+       id="linearGradient22021"
+       x1="145.1035"
+       y1="276.00879"
+       x2="281.97"
+       y2="347.85486"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient22023"
+       id="linearGradient22029"
+       x1="170.00001"
+       y1="434.50504"
+       x2="316.26044"
+       y2="439.80692"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient22031"
+       id="linearGradient22037"
+       x1="273.79214"
+       y1="552.20044"
+       x2="275.07779"
+       y2="485.3588"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient21999"
+       id="linearGradient22058"
+       gradientUnits="userSpaceOnUse"
+       x1="50.000008"
+       y1="281.64789"
+       x2="166.3909"
+       y2="292.83875" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient21991"
+       id="linearGradient22060"
+       gradientUnits="userSpaceOnUse"
+       x1="450.19748"
+       y1="276.80197"
+       x2="467.07513"
+       y2="304.30557" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient22007"
+       id="linearGradient22062"
+       gradientUnits="userSpaceOnUse"
+       x1="498.05743"
+       y1="504.53333"
+       x2="487.58127"
+       y2="417.0271" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="512.1978"
+     inkscape:cy="496.28437"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer23"
+     showgrid="false"
+     inkscape:window-width="1680"
+     inkscape:window-height="988"
+     inkscape:window-x="1592"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata9374">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer14"
+     inkscape:label="boty"
+     style="opacity:1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.71238942;fill:#141414;fill-opacity:1;stroke:none;filter:url(#filter13923)"
+       id="path13155"
+       sodipodi:cx="335"
+       sodipodi:cy="820.93359"
+       sodipodi:rx="210.71428"
+       sodipodi:ry="58.57143"
+       d="m 545.71428,820.93359 a 210.71428,58.57143 0 1 1 -421.42856,0 210.71428,58.57143 0 1 1 421.42856,0 z"
+       transform="matrix(1.2074396,0,0,1,37.585533,-159.99997)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\overcast.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#8e8e8e;fill-opacity:1;stroke:none"
+       id="path9885"
+       sodipodi:cx="235"
+       sodipodi:cy="316.64789"
+       sodipodi:rx="126.42857"
+       sodipodi:ry="81.428574"
+       d="m 361.42857,316.64789 a 126.42857,81.428574 0 1 1 -252.85714,0 126.42857,81.428574 0 1 1 252.85714,0 z"
+       transform="matrix(0.65900575,-0.03272908,0.02996378,0.60332593,10.685153,329.14032)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\overcast.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#8e8e8e;fill-opacity:1;stroke:none"
+       id="path9887"
+       sodipodi:cx="444.28571"
+       sodipodi:cy="270.21933"
+       sodipodi:rx="131.42857"
+       sodipodi:ry="97.85714"
+       d="m 575.71428,270.21933 a 131.42857,97.85714 0 1 1 -262.85715,0 131.42857,97.85714 0 1 1 262.85715,0 z"
+       transform="matrix(0.72050069,-0.03578319,0.02223637,0.44773313,2.4499209,384.48827)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\overcast.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#8e8e8e;fill-opacity:1;stroke:none"
+       id="path9889"
+       sodipodi:cx="517.85712"
+       sodipodi:cy="421.64789"
+       sodipodi:rx="165"
+       sodipodi:ry="92.14286"
+       d="m 682.85712,421.64789 a 165,92.14286 0 1 1 -330,0 165,92.14286 0 1 1 330,0 z"
+       transform="matrix(0.72050069,-0.03578319,0.02223637,0.44773313,2.4499209,384.48827)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\overcast.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#8e8e8e;fill-opacity:1;stroke:none"
+       id="path9891"
+       sodipodi:cx="327.85715"
+       sodipodi:cy="512.36218"
+       sodipodi:rx="75"
+       sodipodi:ry="84.285713"
+       d="m 402.85715,512.36218 a 75,84.285713 0 1 1 -150,0 75,84.285713 0 1 1 150,0 z"
+       transform="matrix(0.72050069,-0.03578319,-0.23518599,0.5925523,134.46955,312.82877)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\overcast.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#8e8e8e;fill-opacity:1;stroke:none"
+       id="path9893"
+       sodipodi:cx="267.85715"
+       sodipodi:cy="434.50504"
+       sodipodi:rx="97.85714"
+       sodipodi:ry="79.285713"
+       d="m 365.71429,434.50504 a 97.85714,79.285713 0 1 1 -195.71428,0 97.85714,79.285713 0 1 1 195.71428,0 z"
+       transform="matrix(1.2976341,-0.06444614,-0.56014888,0.47665691,46.90484,390.61601)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\overcast.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#8e8e8e;fill-opacity:1;stroke:none"
+       id="path9895"
+       sodipodi:cx="350.71429"
+       sodipodi:cy="358.79074"
+       sodipodi:rx="72.14286"
+       sodipodi:ry="66.428574"
+       d="m 422.85715,358.79074 a 72.14286,66.428574 0 1 1 -144.28572,0 72.14286,66.428574 0 1 1 144.28572,0 z"
+       transform="matrix(0.72050069,-0.03578319,0.02223637,0.44773313,0.09232008,394.61768)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\overcast.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:3;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path10196-8"
+       sodipodi:cx="147.85715"
+       sodipodi:cy="69.505043"
+       sodipodi:rx="12.142858"
+       sodipodi:ry="11.428572"
+       d="m 160,69.505043 a 12.142858,11.428572 0 1 1 -24.28571,0 12.142858,11.428572 0 1 1 24.28571,0 z"
+       transform="matrix(0.86428188,-0.04292399,0.03156529,0.63557258,144.42854,472.6284)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\overcast.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#0000ff;fill-opacity:1;stroke:none"
+       id="path10196-2-3"
+       sodipodi:cx="147.85715"
+       sodipodi:cy="69.505043"
+       sodipodi:rx="12.142858"
+       sodipodi:ry="11.428572"
+       d="m 160,69.505043 a 12.142858,11.428572 0 1 1 -24.28571,0 12.142858,11.428572 0 1 1 24.28571,0 z"
+       transform="matrix(0.49815524,-0.02474055,0.02131943,0.42927042,199.88584,484.24856)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\overcast.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:3;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path10196-9-9"
+       sodipodi:cx="147.85715"
+       sodipodi:cy="69.505043"
+       sodipodi:rx="12.142858"
+       sodipodi:ry="11.428572"
+       d="m 160,69.505043 a 12.142858,11.428572 0 1 1 -24.28571,0 12.142858,11.428572 0 1 1 24.28571,0 z"
+       transform="matrix(0.86428188,-0.04292399,0.03156529,0.63557258,183.77163,463.4942)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\overcast.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#0000ff;fill-opacity:1;stroke:none"
+       id="path10196-2-8-4"
+       sodipodi:cx="147.85715"
+       sodipodi:cy="69.505043"
+       sodipodi:rx="12.142858"
+       sodipodi:ry="11.428572"
+       d="m 160,69.505043 a 12.142858,11.428572 0 1 1 -24.28571,0 12.142858,11.428572 0 1 1 24.28571,0 z"
+       transform="matrix(0.49815524,-0.02474055,0.02131943,0.42927042,239.22895,475.11436)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\overcast.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:2.43937969;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 268.86991,553.48625 c 0,0 9.23641,-8.87298 15.0269,-11.79283 5.80697,-2.92818 12.67982,-3.57548 19.01975,-5.36322 6.33992,-1.78773 12.44115,-4.61069 19.01975,-5.36322 7.63375,-0.87322 23.01262,1.06641 23.01262,1.06641"
+       id="path10297"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="caaac"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\overcast.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:2.43937969;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 253.82879,546.50069 26.47245,15.25505"
+       id="path10299"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\overcast.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:2.43937969;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 351.62123,518.44617 -9.68008,26.99242"
+       id="path10301"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\overcast.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.99557525;fill:#800000;fill-opacity:1;stroke:#ffffff;stroke-width:3;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path10303"
+       sodipodi:cx="132.85715"
+       sodipodi:cy="55.933609"
+       sodipodi:rx="10"
+       sodipodi:ry="7.8571429"
+       d="m 142.85715,55.933609 a 10,7.8571429 0 1 1 -20,0 10,7.8571429 0 1 1 20,0 z"
+       transform="matrix(0.85505177,-0.04246558,0.03830881,0.77135455,183.43623,485.20487)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\overcast.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:url(#linearGradient22029);fill-opacity:1;stroke:none"
+       id="path9893-4"
+       sodipodi:cx="267.85715"
+       sodipodi:cy="434.50504"
+       sodipodi:rx="97.85714"
+       sodipodi:ry="79.285713"
+       d="m 365.71429,434.50504 a 97.85714,79.285713 0 1 1 -195.71428,0 97.85714,79.285713 0 1 1 195.71428,0 z"
+       transform="matrix(1.2976341,-0.06444614,-0.56014888,0.47665691,46.54426,390.772)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\overcast.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:url(#linearGradient22021);fill-opacity:1;stroke:none"
+       id="path9885-9"
+       sodipodi:cx="235"
+       sodipodi:cy="316.64789"
+       sodipodi:rx="126.42857"
+       sodipodi:ry="81.428574"
+       d="m 361.42857,316.64789 a 126.42857,81.428574 0 1 1 -252.85714,0 126.42857,81.428574 0 1 1 252.85714,0 z"
+       transform="matrix(0.65900575,-0.03272908,0.02996378,0.60332593,9.42396,329.87122)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\overcast.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:url(#linearGradient22037);fill-opacity:1;stroke:none"
+       id="path9891-1"
+       sodipodi:cx="327.85715"
+       sodipodi:cy="512.36218"
+       sodipodi:rx="75"
+       sodipodi:ry="84.285713"
+       d="m 402.85715,512.36218 a 75,84.285713 0 1 1 -150,0 75,84.285713 0 1 1 150,0 z"
+       transform="matrix(0.72050069,-0.03578319,-0.23518599,0.5925523,134.08575,313.60853)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\overcast.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer23"
+     inkscape:label="faces">
+    <g
+       id="g22039"
+       transform="translate(0,162)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\overcast.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         transform="matrix(0.81530085,0.10102431,-0.05827584,0.47030598,34.821703,1.8616713)"
+         d="m 682.85712,421.64789 c 0,50.88909 -73.87302,92.14286 -165,92.14286 -91.12699,0 -165,-41.25377 -165,-92.14286 0,-50.8891 73.87301,-92.14286 165,-92.14286 91.12698,0 165,41.25376 165,92.14286 z"
+         sodipodi:ry="92.14286"
+         sodipodi:rx="165"
+         sodipodi:cy="421.64789"
+         sodipodi:cx="517.85712"
+         id="path9889-0"
+         style="fill:#8e8e8e;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(0.89091957,-0.01781613,-0.05827584,0.47030598,184.39843,59.75944)"
+         d="m 682.85712,421.64789 c 0,50.88909 -73.87302,92.14286 -165,92.14286 -91.12699,0 -165,-41.25377 -165,-92.14286 0,-50.8891 73.87301,-92.14286 165,-92.14286 91.12698,0 165,41.25376 165,92.14286 z"
+         sodipodi:ry="92.14286"
+         sodipodi:rx="165"
+         sodipodi:cy="421.64789"
+         sodipodi:cx="517.85712"
+         id="path9889-0-4"
+         style="fill:#8e8e8e;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(0.49940194,0.06188113,-0.05827584,0.47030598,349.65832,62.027952)"
+         d="m 682.85712,421.64789 c 0,50.88909 -73.87302,92.14286 -165,92.14286 -91.12699,0 -165,-41.25377 -165,-92.14286 0,-50.8891 73.87301,-92.14286 165,-92.14286 91.12698,0 165,41.25376 165,92.14286 z"
+         sodipodi:ry="92.14286"
+         sodipodi:rx="165"
+         sodipodi:cy="421.64789"
+         sodipodi:cx="517.85712"
+         id="path9889-0-2"
+         style="fill:#8e8e8e;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(0.3290282,0.22124913,-0.61086904,0.54312821,544.25263,-16.258744)"
+         d="m 682.85712,421.64789 c 0,50.88909 -73.87302,92.14286 -165,92.14286 -91.12699,0 -165,-41.25377 -165,-92.14286 0,-50.8891 73.87301,-92.14286 165,-92.14286 91.12698,0 165,41.25376 165,92.14286 z"
+         sodipodi:ry="92.14286"
+         sodipodi:rx="165"
+         sodipodi:cy="421.64789"
+         sodipodi:cx="517.85712"
+         id="path9889-0-1"
+         style="fill:#8e8e8e;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(1.1464062,0.14205173,-0.12297004,0.99241038,-29.826204,-154.43059)"
+         d="m 565.71427,294.50504 c 0,21.6969 -28.78169,39.28571 -64.28571,39.28571 -35.50402,0 -64.28571,-17.58881 -64.28571,-39.28571 0,-21.6969 28.78169,-39.28572 64.28571,-39.28572 35.50402,0 64.28571,17.58882 64.28571,39.28572 z"
+         sodipodi:ry="39.285713"
+         sodipodi:rx="64.285713"
+         sodipodi:cy="294.50504"
+         sodipodi:cx="501.42856"
+         id="path19906"
+         style="fill:#8e8e8e;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(0.98636401,0.16853759,-0.11185783,0.88576224,277.94152,-23.696195)"
+         d="m 208.57143,281.64789 c 0,21.6969 -35.49742,39.28571 -79.28571,39.28571 -43.788289,0 -79.285712,-17.58881 -79.285712,-39.28571 0,-21.6969 35.497423,-39.28572 79.285712,-39.28572 43.78829,0 79.28571,17.58882 79.28571,39.28572 z"
+         sodipodi:ry="39.285713"
+         sodipodi:rx="79.285713"
+         sodipodi:cy="281.64789"
+         sodipodi:cx="129.28572"
+         id="path19923"
+         style="fill:url(#linearGradient22058);fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(1.1464062,0.14205173,-0.12297004,0.99241038,-28.86229,-154.99081)"
+         d="m 565.71427,294.50504 c 0,21.6969 -28.78169,39.28571 -64.28571,39.28571 -35.50402,0 -64.28571,-17.58881 -64.28571,-39.28571 0,-21.6969 28.78169,-39.28572 64.28571,-39.28572 35.50402,0 64.28571,17.58882 64.28571,39.28572 z"
+         sodipodi:ry="39.285713"
+         sodipodi:rx="64.285713"
+         sodipodi:cy="294.50504"
+         sodipodi:cx="501.42856"
+         id="path19906-3"
+         style="fill:url(#linearGradient22060);fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(0.3290282,0.22124913,-0.61086904,0.54312821,542.48245,-16.397898)"
+         d="m 682.85712,421.64789 c 0,50.88909 -73.87302,92.14286 -165,92.14286 -91.12699,0 -165,-41.25377 -165,-92.14286 0,-50.8891 73.87301,-92.14286 165,-92.14286 91.12698,0 165,41.25376 165,92.14286 z"
+         sodipodi:ry="92.14286"
+         sodipodi:rx="165"
+         sodipodi:cy="421.64789"
+         sodipodi:cx="517.85712"
+         id="path9889-0-1-1"
+         style="fill:url(#linearGradient22062);fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path10162"
+         d="m 534.23825,298.46293 10.28665,-8.73094 4.95834,9.50824"
+         style="fill:none;stroke:#ffffff;stroke-width:2.22226644;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path10162-4"
+         d="m 562.41354,298.0631 10.28666,-8.73096 4.95834,9.50823"
+         style="fill:none;stroke:#ffffff;stroke-width:2.22226644;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path10162-1"
+         d="m 548.04017,298.50555 10.28664,-8.73096 4.95836,9.50825"
+         style="fill:none;stroke:#ffffff;stroke-width:2.22226644;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path10162-2"
+         d="m 578.80151,297.87027 10.28666,-8.73094 4.95834,9.50824"
+         style="fill:none;stroke:#ffffff;stroke-width:2.22226644;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         transform="matrix(0.85877946,0.10641177,-0.07825271,0.63152623,418.53077,196.75574)"
+         d="m 160,69.505043 c 0,6.311826 -5.43654,11.428572 -12.14285,11.428572 -6.70632,0 -12.14286,-5.116746 -12.14286,-11.428572 0,-6.311826 5.43654,-11.428572 12.14286,-11.428572 6.70631,0 12.14285,5.116746 12.14285,11.428572 z"
+         sodipodi:ry="11.428572"
+         sodipodi:rx="12.142858"
+         sodipodi:cy="69.505043"
+         sodipodi:cx="147.85715"
+         id="path10196"
+         style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:3;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(0.49498375,0.06133367,-0.05285246,0.42653749,471.16196,217.74381)"
+         d="m 160,69.505043 c 0,6.311826 -5.43654,11.428572 -12.14285,11.428572 -6.70632,0 -12.14286,-5.116746 -12.14286,-11.428572 0,-6.311826 5.43654,-11.428572 12.14286,-11.428572 6.70631,0 12.14285,5.116746 12.14285,11.428572 z"
+         sodipodi:ry="11.428572"
+         sodipodi:rx="12.142858"
+         sodipodi:cy="69.505043"
+         sodipodi:cx="147.85715"
+         id="path10196-2"
+         style="fill:#0000ff;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(0.85877946,0.10641177,-0.07825271,0.63152623,458.85872,194.52653)"
+         d="m 160,69.505043 c 0,6.311826 -5.43654,11.428572 -12.14285,11.428572 -6.70632,0 -12.14286,-5.116746 -12.14286,-11.428572 0,-6.311826 5.43654,-11.428572 12.14286,-11.428572 6.70631,0 12.14285,5.116746 12.14285,11.428572 z"
+         sodipodi:ry="11.428572"
+         sodipodi:rx="12.142858"
+         sodipodi:cy="69.505043"
+         sodipodi:cx="147.85715"
+         id="path10196-9"
+         style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:3;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(0.49498375,0.06133367,-0.05285246,0.42653749,511.48991,215.5146)"
+         d="m 160,69.505043 c 0,6.311826 -5.43654,11.428572 -12.14285,11.428572 -6.70632,0 -12.14286,-5.116746 -12.14286,-11.428572 0,-6.311826 5.43654,-11.428572 12.14286,-11.428572 6.70631,0 12.14285,5.116746 12.14285,11.428572 z"
+         sodipodi:ry="11.428572"
+         sodipodi:rx="12.142858"
+         sodipodi:cy="69.505043"
+         sodipodi:cx="147.85715"
+         id="path10196-2-8"
+         style="fill:#0000ff;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         d="m 142.85715,55.933609 c 0,4.33938 -4.47716,7.857143 -10,7.857143 -5.52285,0 -10,-3.517763 -10,-7.857143 0,-4.33938 4.47715,-7.857143 10,-7.857143 5.52284,0 10,3.517763 10,7.857143 z"
+         sodipodi:ry="7.8571429"
+         sodipodi:rx="10"
+         sodipodi:cy="55.933609"
+         sodipodi:cx="132.85715"
+         id="path10303-4"
+         style="opacity:0.99557525;fill:#800000;fill-opacity:1;stroke:#ffffff;stroke-width:3;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="arc"
+         transform="matrix(0.84960812,0.10527534,-0.09497041,0.76644376,455.28247,219.58151)" />
+    </g>
+  </g>
+</svg>

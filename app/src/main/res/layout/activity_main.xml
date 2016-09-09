@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:id="@+id/main"
+    android:background="@android:color/background_dark">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageViewBG"
+        android:adjustViewBounds="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop" />
+
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:gravity="center"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical"
+    android:layout_marginTop="-50dp">
+
+    <ListView
+        android:id="@+id/clothesList"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:dividerHeight="-2dp"
+        android:layout_marginBottom="20dp">
+    </ListView>
+
+    <TextView android:text="@string/hello_world"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/clothesList"
+        android:id="@+id/results"
+        android:textColor="#ffffff"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:lineSpacingExtra="5dp"
+        android:textSize="16sp" />
+</LinearLayout>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Refresh"
+        android:id="@+id/refreshButton"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/buttonBG"
+        android:textColor="@color/buttonText"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:id="@+id/settingsButton"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/buttonBG"
+        android:textColor="@color/buttonText"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

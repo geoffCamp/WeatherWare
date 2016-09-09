@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg9369"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="storm.svg">
+  <defs
+     id="defs9371">
+    <filter
+       inkscape:collect="always"
+       id="filter10952"
+       x="-0.1904419"
+       width="1.3808838"
+       y="-0.26459627"
+       height="1.5291925">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="17.797249"
+         id="feGaussianBlur10954" />
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter10952-5"
+       x="-0.19044191"
+       width="1.3808838"
+       y="-0.26459628"
+       height="1.5291924">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="17.797249"
+         id="feGaussianBlur10954-6" />
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter10952-0"
+       x="-0.19044191"
+       width="1.3808838"
+       y="-0.26459628"
+       height="1.5291924">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="17.797249"
+         id="feGaussianBlur10954-7" />
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter10952-7"
+       x="-0.19044191"
+       width="1.3808838"
+       y="-0.26459628"
+       height="1.5291924">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="17.797249"
+         id="feGaussianBlur10954-2" />
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter10952-71"
+       x="-0.19044191"
+       width="1.3808838"
+       y="-0.26459628"
+       height="1.5291924">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="17.797249"
+         id="feGaussianBlur10954-3" />
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter13923"
+       x="-0.059949383"
+       width="1.1198988"
+       y="-0.21567155"
+       height="1.4313431">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="10.526826"
+         id="feGaussianBlur13925" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="321.21439"
+     inkscape:cy="512.76159"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer18"
+     showgrid="false"
+     inkscape:window-width="1680"
+     inkscape:window-height="988"
+     inkscape:window-x="1592"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata9374">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer18"
+     inkscape:label="shadow">
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.71238942000000005;fill:#141414;fill-opacity:1;stroke:none;filter:url(#filter13923)"
+       id="path13155"
+       sodipodi:cx="335"
+       sodipodi:cy="820.93359"
+       sodipodi:rx="210.71428"
+       sodipodi:ry="58.57143"
+       d="m 545.71428,820.93359 a 210.71428,58.57143 0 1 1 -421.42856,0 210.71428,58.57143 0 1 1 421.42856,0 z"
+       transform="matrix(1.0470135,0,0,0.75291841,3.5361923,102.8376)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\thunder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer7"
+     inkscape:label="lightning">
+    <path
+       style="fill:#ffff00;stroke:none"
+       d="m 271.95966,419.9722 -71.41126,166.35071 53.11366,-19.01151 -66.04303,182.19363 128.7723,-234.47529 -68.5594,28.51727 69.62838,-128.32769 z"
+       id="path10897"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\thunder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ffff00;stroke:none"
+       d="m 469.57892,354.79279 -50.9831,135.07108 37.91978,-15.43669 -47.15053,147.935 91.93524,-190.38592 -48.94706,23.15505 49.71024,-104.1977 z"
+       id="path10897-6"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\thunder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+  <g
+     inkscape:label="cloud"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.99557525;fill:#666666;fill-opacity:1;stroke:none"
+       id="path10333"
+       sodipodi:cx="160.71428"
+       sodipodi:cy="297.36218"
+       sodipodi:rx="112.14286"
+       sodipodi:ry="80.714287"
+       d="m 272.85714,297.36218 a 112.14286,80.714287 0 1 1 -224.285721,0 112.14286,80.714287 0 1 1 224.285721,0 z"
+       transform="matrix(1.0892857,0,0,0.80926378,9.9489807,66.289654)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\thunder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.99557525;fill:#666666;fill-opacity:1;stroke:none"
+       id="path10335"
+       sodipodi:cx="295.71429"
+       sodipodi:cy="217.36218"
+       sodipodi:rx="132.85715"
+       sodipodi:ry="142.14285"
+       d="m 428.57144,217.36218 a 132.85715,142.14285 0 1 1 -265.71429,0 132.85715,142.14285 0 1 1 265.71429,0 z"
+       transform="matrix(1.0048403,-0.31241923,0.42052271,0.74652668,-89.163606,149.19133)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\thunder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.99557525;fill:#666666;fill-opacity:1;stroke:none"
+       id="path10845"
+       sodipodi:cx="423.57144"
+       sodipodi:cy="273.07648"
+       sodipodi:rx="185"
+       sodipodi:ry="123.57143"
+       d="m 608.57144,273.07648 a 185,123.57143 0 1 1 -370,0 185,123.57143 0 1 1 370,0 z"
+       transform="matrix(1.0892857,0,0,0.80926378,9.9489807,66.289654)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\thunder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.99557525;fill:#666666;fill-opacity:1;stroke:none"
+       id="path10849"
+       sodipodi:cx="297.85715"
+       sodipodi:cy="374.50504"
+       sodipodi:rx="50.714287"
+       sodipodi:ry="70.714287"
+       d="m 348.57143,374.50504 a 50.714287,70.714287 0 1 1 -101.42857,0 50.714287,70.714287 0 1 1 101.42857,0 z"
+       transform="matrix(1.4268108,0,-0.24206349,1.0544952,-37.278243,-12.833755)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\thunder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:3;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path10196-8"
+       sodipodi:cx="147.85715"
+       sodipodi:cy="69.505043"
+       sodipodi:rx="12.142858"
+       sodipodi:ry="11.428572"
+       d="m 160,69.505043 a 12.142858,11.428572 0 1 1 -24.28571,0 12.142858,11.428572 0 1 1 24.28571,0 z"
+       transform="matrix(0.86534712,0,0,0.63635593,159.00291,190.96584)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\thunder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#0000ff;fill-opacity:1;stroke:none"
+       id="path10196-2-3"
+       sodipodi:cx="147.85715"
+       sodipodi:cy="69.505043"
+       sodipodi:rx="12.142858"
+       sodipodi:ry="11.428572"
+       d="m 160,69.505043 a 12.142858,11.428572 0 1 1 -24.28571,0 12.142858,11.428572 0 1 1 24.28571,0 z"
+       transform="matrix(0.49876922,0,0,0.4297995,213.81556,205.32256)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\thunder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:3;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path10196-9-9"
+       sodipodi:cx="147.85715"
+       sodipodi:cy="69.505043"
+       sodipodi:rx="12.142858"
+       sodipodi:ry="11.428572"
+       d="m 160,69.505043 a 12.142858,11.428572 0 1 1 -24.28571,0 12.142858,11.428572 0 1 1 24.28571,0 z"
+       transform="matrix(0.86534712,0,0,0.63635593,198.75067,183.79443)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\thunder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#0000ff;fill-opacity:1;stroke:none"
+       id="path10196-2-8-4"
+       sodipodi:cx="147.85715"
+       sodipodi:cy="69.505043"
+       sodipodi:rx="12.142858"
+       sodipodi:ry="11.428572"
+       d="m 160,69.505043 a 12.142858,11.428572 0 1 1 -24.28571,0 12.142858,11.428572 0 1 1 24.28571,0 z"
+       transform="matrix(0.49876922,0,0,0.4297995,253.56332,198.15115)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\thunder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:2.43937969;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 279.2803,277.89684 c 0,0 9.66517,-8.4039 15.59336,-11.03293 5.94507,-2.63653 12.84157,-2.94212 19.26237,-4.41318 6.42079,-1.47105 12.65454,-3.98789 19.26237,-4.41317 7.66767,-0.49349 22.9314,2.20659 22.9314,2.20659"
+       id="path10297"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="caaac"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\thunder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:2.43937969;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 264.6042,270.17379 25.68316,16.54939"
+       id="path10299"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\thunder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:2.43937969;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 363.66785,247.00463 -11.00707,26.47903"
+       id="path10301"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\thunder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.99557525;fill:#800000;fill-opacity:1;stroke:#ffffff;stroke-width:3;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path10303"
+       sodipodi:cx="132.85715"
+       sodipodi:cy="55.933609"
+       sodipodi:rx="10"
+       sodipodi:ry="7.8571429"
+       d="m 142.85715,55.933609 a 10,7.8571429 0 1 1 -20,0 10,7.8571429 0 1 1 20,0 z"
+       transform="matrix(0.85610564,0,0,0.77230526,197.33876,205.46174)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\thunder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.28318583000000003;fill:#b3b3b3;fill-opacity:1;stroke:none;filter:url(#filter10952)"
+       id="path10333-8"
+       sodipodi:cx="160.71428"
+       sodipodi:cy="297.36218"
+       sodipodi:rx="112.14286"
+       sodipodi:ry="80.714287"
+       d="m 272.85714,297.36218 a 112.14286,80.714287 0 1 1 -224.285721,0 112.14286,80.714287 0 1 1 224.285721,0 z"
+       transform="matrix(0.88171994,0,0,0.58935479,37.580727,132.82465)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\thunder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.28318583;fill:#b3b3b3;fill-opacity:1;stroke:none;filter:url(#filter10952-5)"
+       id="path10333-8-6"
+       sodipodi:cx="160.71428"
+       sodipodi:cy="297.36218"
+       sodipodi:rx="112.14286"
+       sodipodi:ry="80.714287"
+       d="m 272.85714,297.36218 a 112.14286,80.714287 0 1 1 -224.285721,0 112.14286,80.714287 0 1 1 224.285721,0 z"
+       transform="matrix(1.0154845,0,0,0.6125031,337.51142,101.65549)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\thunder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.28318583;fill:#b3b3b3;fill-opacity:1;stroke:none;filter:url(#filter10952-0)"
+       id="path10333-8-2"
+       sodipodi:cx="160.71428"
+       sodipodi:cy="297.36218"
+       sodipodi:rx="112.14286"
+       sodipodi:ry="80.714287"
+       d="m 272.85714,297.36218 a 112.14286,80.714287 0 1 1 -224.285721,0 112.14286,80.714287 0 1 1 224.285721,0 z"
+       transform="matrix(0.57971497,0,0,0.58935479,200.10668,209.9675)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\thunder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.28318583;fill:#b3b3b3;fill-opacity:1;stroke:none;filter:url(#filter10952-7)"
+       id="path10333-8-64"
+       sodipodi:cx="160.71428"
+       sodipodi:cy="297.36218"
+       sodipodi:rx="112.14286"
+       sodipodi:ry="80.714287"
+       d="m 272.85714,297.36218 a 112.14286,80.714287 0 1 1 -224.285721,0 112.14286,80.714287 0 1 1 224.285721,0 z"
+       transform="matrix(0.88171994,0,0,0.58935479,136.86644,12.824641)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\thunder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.28318583;fill:#b3b3b3;fill-opacity:1;stroke:none;filter:url(#filter10952-71)"
+       id="path10333-8-21"
+       sodipodi:cx="160.71428"
+       sodipodi:cy="297.36218"
+       sodipodi:rx="112.14286"
+       sodipodi:ry="80.714287"
+       d="m 272.85714,297.36218 a 112.14286,80.714287 0 1 1 -224.285721,0 112.14286,80.714287 0 1 1 224.285721,0 z"
+       transform="matrix(0.88171994,0,0,0.58935479,181.15216,102.82464)"
+       inkscape:export-filename="Z:\android\androidstudio\projects\What2wear\images\mine\thunder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+</svg>
