@@ -1,2 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/Users/Geofferson/Documents/prog/android/WeatherWare/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
+        <dex dex="/Users/Geofferson/Documents/prog/android/WeatherWare/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-6.5.87_77bf23f9b45131f8aa744e7c45ba1664af316b54/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Geofferson/Documents/prog/android/WeatherWare/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="c259c99364c9c2a66e58cb2203580609bbbd0dda">
+        <dex dex="/Users/Geofferson/Documents/prog/android/WeatherWare/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_744be2260c047a194d505c7e247dfd480743f82e/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Geofferson/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.0/support-annotations-21.0.0.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="1a578b9607b36266c63d43a4fa0ab5664dbe911e">
+        <dex dex="/Users/Geofferson/Documents/prog/android/WeatherWare/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-21.0.0_af6abf44ed674caab9d7feef07f850f80b4a9321/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Geofferson/Documents/prog/android/WeatherWare/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="9d253a5cdeaa5a0b51e1d14dbf9bc05570577b0f">
+        <dex dex="/Users/Geofferson/Documents/prog/android/WeatherWare/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_54d18a8c37185aaa1da724202559bf2571e1727a/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Geofferson/Documents/prog/android/WeatherWare/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="686344a780033e4ba22b926cd225f8d4941247e6">
+        <dex dex="/Users/Geofferson/Documents/prog/android/WeatherWare/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-21.0.0_5afc5a1dc0c8ce937935a96b47b8b97b9692a1ed/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Geofferson/Documents/prog/android/WeatherWare/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/jars/libs/internal_impl-21.0.0.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0">
+        <dex dex="/Users/Geofferson/Documents/prog/android/WeatherWare/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-21.0.0_478dfee5341fa973874accb09d933ffb547134db/classes.dex" />
+    </item>
+
+</items>
