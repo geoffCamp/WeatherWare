@@ -42,12 +42,15 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 import org.json.JSONObject;
 
+import java.util.Map;
+
 public class MainActivity extends FragmentActivity implements
         asyncResponse, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, OnMapReadyCallback{
 
     protected getWeatherData mAsyncTask = new getWeatherData(MainActivity.this,MainActivity.this);
     protected data2clothes mData2clothes = new data2clothes();
     protected MapFragment mMapFragment;
+    protected View mMapView;
     protected settings mSettings = new settings();
     protected Dialog settingsDialoge;
     protected Dialog referenceDialog;
@@ -63,7 +66,8 @@ public class MainActivity extends FragmentActivity implements
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mAsyncTask.initiate(MainActivity.this);//passing context so the class can access getsystemservice
+        mAsyncTask.initiate(MainActivity.this);//pass
+        // ing context so the class can access getsystemservice
         //Log.i(TAG, "started get weather");
 
         getCurrentLocation();
@@ -76,13 +80,15 @@ public class MainActivity extends FragmentActivity implements
         referenceDialog.setContentView(R.layout.reference_dialog);
         referenceDialog.setTitle("Image Reference");
 
-
         refreshButton = (Button) findViewById(R.id.refreshButton);
         settingsButton = (Button) findViewById(R.id.settingsButton);
         Button settingsConfirm = (Button) settingsDialoge.findViewById(R.id.settingsConfirm);
         Button settingsCancel = (Button) settingsDialoge.findViewById(R.id.settingsCancel);
         Button settingsRef = (Button) settingsDialoge.findViewById(R.id.refBtn);
         Button referenceCancel = (Button) referenceDialog.findViewById(R.id.refCancel);
+
+        mMapView = findViewById(R.id.map);
+        hideMap();
 
         refreshButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -158,14 +164,15 @@ public class MainActivity extends FragmentActivity implements
         setUpMap();
     }
 
+
+
     private void setUpMap () {
         try {
             switch (GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable(this)) {
                 case ConnectionResult.SUCCESS:
-                    if (mMapFragment != null) {
-                        Log.d(TAG, "calling getMapAsync");
-                        mMapFragment.getMapAsync(this);
-                    }
+                    mMapFragment = (MapFragment) getFragmentManager().findFragmentById(R.id.map);
+                    Log.d(TAG, "calling getMapAsync");
+                    mMapFragment.getMapAsync(this);
                     break;
                 case ConnectionResult.SERVICE_MISSING:
 
@@ -188,10 +195,13 @@ public class MainActivity extends FragmentActivity implements
         if (map == null) {
             Log.d("", "Map Fragment Not Found or no Map in it!!");
         }
-        LatLng CENTER = mSettings.returnLatLng(this);
+        map.addMarker(new MarkerOptions()
+            .position(new LatLng(37.7750, -122.4183))
+            .title("marker"));
+        LatLng pos = mSettings.returnLatLng(this);
         try {
             map.addMarker(new MarkerOptions()
-                    .position(CENTER)
+                    .position(pos)
                     .title("sugar'n spice").snippet(""));
         } catch (Exception e) {
             e.printStackTrace();
@@ -200,9 +210,9 @@ public class MainActivity extends FragmentActivity implements
         map.setIndoorEnabled(true);
         //map.setMyLocationEnabled(true);
         map.moveCamera(CameraUpdateFactory.zoomTo(5));
-        if (CENTER != null) {
+        if (pos != null) {
             map.animateCamera(
-                    CameraUpdateFactory.newLatLng(CENTER), 1750,
+                    CameraUpdateFactory.newLatLng(pos), 1750,
                     null);
         }
         // add circle
@@ -276,13 +286,13 @@ public class MainActivity extends FragmentActivity implements
     }
 
     protected void showMap () {
-        //getFragmentManager().beginTransaction().add(R.id.main,mMapFragment).commit();
+        mMapView.setVisibility(View.VISIBLE);
         settingsButton.setVisibility(View.GONE);
         refreshButton.setVisibility(View.GONE);
     }
 
     public void hideMap () {
-        //getFragmentManager().beginTransaction().remove(mMapFragment).commit();
+        mMapView.setVisibility(View.GONE);
         settingsButton.setVisibility(View.VISIBLE);
         refreshButton.setVisibility(View.VISIBLE);
     }

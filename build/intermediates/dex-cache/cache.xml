@@ -1,12 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" >
-
-    <item
-        jar="/Users/Geofferson/Documents/prog/android/WeatherWare/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        revision="21.1.2"
-        sha1="734eb51011d722d0c7d669030ec55bfea8a1a54e">
-        <dex dex="/Users/Geofferson/Documents/prog/android/WeatherWare/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_744be2260c047a194d505c7e247dfd480743f82e/classes.dex" />
-    </item>
-
-</items>
+<items version="2" />
