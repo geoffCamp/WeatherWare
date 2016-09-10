@@ -31,6 +31,7 @@ import android.widget.Toast;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.maps.*;
 //import com.google.android.gms.common.api.GoogleApiClient;
 //import com.google.android.gms.location.LocationServices;
 
@@ -40,6 +41,7 @@ public class MainActivity extends Activity implements asyncResponse, GoogleApiCl
 
     protected getWeatherData mAsyncTask = new getWeatherData(MainActivity.this,MainActivity.this);
     protected data2clothes mData2clothes = new data2clothes();
+    protected MapFragment mMapFragment = new MapFragment();
     protected settings mSettings = new settings();
     protected Dialog settingsDialoge;
     protected Dialog referenceDialog;
@@ -85,6 +87,7 @@ public class MainActivity extends Activity implements asyncResponse, GoogleApiCl
             @Override
             public void onClick (View v) {
                 settingsDialoge.show();
+                getFragmentManager().beginTransaction().add(R.id.main,mMapFragment).commit();
             }
 
         });
