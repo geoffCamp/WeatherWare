@@ -44,4 +44,11 @@ public class settings {
         editor.commit();
     }
 
+    protected void saveCoords (Context context, Double lat, Double lon) {
+        SharedPreferences.Editor editor = context.getSharedPreferences("myPrefs", context.MODE_PRIVATE).edit();
+        editor.putFloat("lat", Float.valueOf(String.valueOf(lat)));
+        editor.putFloat("lon", Float.valueOf(String.valueOf(lon)));
+        editor.commit();
+    }
+
 }

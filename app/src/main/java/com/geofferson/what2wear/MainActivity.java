@@ -13,6 +13,8 @@ import android.location.LocationManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -27,18 +29,22 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.LocationServices;
 //import com.google.android.gms.common.api.GoogleApiClient;
 //import com.google.android.gms.location.LocationServices;
 
 import org.json.JSONObject;
 
-public class MainActivity extends Activity implements asyncResponse{//, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener
+public class MainActivity extends Activity implements asyncResponse, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener{//, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener
 
     protected getWeatherData mAsyncTask = new getWeatherData(MainActivity.this,MainActivity.this);
     protected data2clothes mData2clothes = new data2clothes();
     protected settings mSettings = new settings();
     protected Dialog settingsDialoge;
     protected Dialog referenceDialog;
+    protected GoogleApiClient mGoogleClient;
+    protected Location mLocation;
 
     private static final String TAG = MainActivity.class.getSimpleName();
 
@@ -50,10 +56,11 @@ public class MainActivity extends Activity implements asyncResponse{//, GoogleAp
         mAsyncTask.initiate(MainActivity.this);//passing context so the class can access getsystemservice
         //Log.i(TAG, "started get weather");
 
+        getCurrentLocation();
         settingsDialoge = new Dialog(this);//final Dialog settingsDialog = new Dialog(this);
         settingsDialoge.setContentView(R.layout.settings_dialoge);
         settingsDialoge.setTitle("Settings");
-        setPrefs(settingsDialoge);
+        getPrefs(settingsDialoge);
 
         referenceDialog = new Dialog(this);//final Dialog settingsDialog = new Dialog(this);
         referenceDialog.setContentView(R.layout.reference_dialog);
@@ -119,7 +126,7 @@ public class MainActivity extends Activity implements asyncResponse{//, GoogleAp
             @Override
             public void onClick(View v) {
                 settingsDialoge.hide();
-                setPrefs(settingsDialoge);
+                getPrefs(settingsDialoge);
             }
         });
 
@@ -139,7 +146,43 @@ public class MainActivity extends Activity implements asyncResponse{//, GoogleAp
         });
     }
 
-    protected void setPrefs(Dialog dialog){
+    protected void getCurrentLocation () {
+        if (mGoogleClient == null) {
+            mGoogleClient = new GoogleApiClient.Builder(this)
+            .addConnectionCallbacks(this)
+            .addOnConnectionFailedListener(this)
+            .addApi(LocationServices.API)
+            .build();
+        }
+        mGoogleClient.connect();
+    }
+
+    @Override
+    public void onConnectionSuspended(int i) {
+        Log.i(TAG, Integer.toString(i));
+    }
+
+    @Override
+    public void onConnected(@Nullable Bundle bundle) {
+        Log.i(TAG, "connected to google client");
+        try {
+            mLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleClient);
+            if (mLocation != null) {
+                mSettings.saveCoords(this,mLocation.getLatitude(),mLocation.getLongitude());
+            }
+        } catch (SecurityException e) {
+            Log.w(TAG, "need location permission");
+            //switch to map to choose location manually
+        }
+
+    }
+
+    @Override
+    public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
+        Log.i(TAG, "connection to google failed");
+    }
+
+    protected void getPrefs(Dialog dialog){
         SharedPreferences prefs = getSharedPreferences("myPrefs",Context.MODE_PRIVATE);
         String unitsGlobal = prefs.getString("units","metric");
         String locationGlobal = prefs.getString("location","Guelph,ca");

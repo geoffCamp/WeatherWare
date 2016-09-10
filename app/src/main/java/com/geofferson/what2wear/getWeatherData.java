@@ -39,8 +39,12 @@ public class getWeatherData extends AsyncTask<Object, Void, JSONObject> {
     protected JSONObject doInBackground(Object... arg0){
         SharedPreferences prefs = context.getSharedPreferences("myPrefs",Context.MODE_PRIVATE);
         String location = prefs.getString("location","Guelph,ca");
+        Float lat = prefs.getFloat("lat",0);
+        Float lon = prefs.getFloat("lon",0);
         //Log.i(TAG, location);
-        String URLvar = "http://api.openweathermap.org/data/2.5/weather?q="+location+"&units=metric&appid="+constants.openWeatherKey;
+        //String URLvar = context.getResources().getString(R.string.baseURL)+"q="+location+"&units=metric&appid="+context.getResources().getString(R.string.weatherKey);
+        String URLvar = context.getResources().getString(R.string.baseURL)+"lat="+lat+"&lon="+lon+"&units=metric&appid="+context.getResources().getString(R.string.weatherKey);
+        //Log.d(TAG, URLvar);
         int responseCode = -1;
         JSONObject jsonResponse = null;
         try {
