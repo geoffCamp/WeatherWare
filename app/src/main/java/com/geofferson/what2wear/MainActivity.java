@@ -15,6 +15,7 @@ import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v4.app.FragmentActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -29,24 +30,31 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.*;
+import com.google.android.gms.maps.MapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 //import com.google.android.gms.common.api.GoogleApiClient;
 //import com.google.android.gms.location.LocationServices;
 
 import org.json.JSONObject;
 
-public class MainActivity extends Activity implements asyncResponse, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener{//, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener
+public class MainActivity extends FragmentActivity implements
+        asyncResponse, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, OnMapReadyCallback{
 
     protected getWeatherData mAsyncTask = new getWeatherData(MainActivity.this,MainActivity.this);
     protected data2clothes mData2clothes = new data2clothes();
-    protected MapFragment mMapFragment = new MapFragment();
+    protected MapFragment mMapFragment;
     protected settings mSettings = new settings();
     protected Dialog settingsDialoge;
     protected Dialog referenceDialog;
     protected GoogleApiClient mGoogleClient;
     protected Location mLocation;
+    protected Button refreshButton;
+    protected Button settingsButton;
 
     private static final String TAG = MainActivity.class.getSimpleName();
 
@@ -69,8 +77,8 @@ public class MainActivity extends Activity implements asyncResponse, GoogleApiCl
         referenceDialog.setTitle("Image Reference");
 
 
-        Button refreshButton = (Button) findViewById(R.id.refreshButton);
-        Button settingsButton = (Button) findViewById(R.id.settingsButton);
+        refreshButton = (Button) findViewById(R.id.refreshButton);
+        settingsButton = (Button) findViewById(R.id.settingsButton);
         Button settingsConfirm = (Button) settingsDialoge.findViewById(R.id.settingsConfirm);
         Button settingsCancel = (Button) settingsDialoge.findViewById(R.id.settingsCancel);
         Button settingsRef = (Button) settingsDialoge.findViewById(R.id.refBtn);
@@ -83,13 +91,12 @@ public class MainActivity extends Activity implements asyncResponse, GoogleApiCl
             }
         });
 
-        settingsButton.setOnClickListener(new View.OnClickListener(){
+        settingsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick (View v) {
                 settingsDialoge.show();
-                getFragmentManager().beginTransaction().add(R.id.main,mMapFragment).commit();
+                showMap();
             }
-
         });
 
         settingsConfirm.setOnClickListener(new View.OnClickListener(){
@@ -147,10 +154,67 @@ public class MainActivity extends Activity implements asyncResponse, GoogleApiCl
                 referenceDialog.hide();
             }
         });
+
+        setUpMap();
+    }
+
+    private void setUpMap () {
+        try {
+            switch (GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable(this)) {
+                case ConnectionResult.SUCCESS:
+                    if (mMapFragment != null) {
+                        Log.d(TAG, "calling getMapAsync");
+                        mMapFragment.getMapAsync(this);
+                    }
+                    break;
+                case ConnectionResult.SERVICE_MISSING:
+
+                    break;
+                case ConnectionResult.SERVICE_VERSION_UPDATE_REQUIRED:
+
+                    break;
+                default:
+
+            }
+        } catch (Exception e) {
+            Log.d(TAG, "map set up failed");
+        }
+    }
+
+    @Override
+    public void onMapReady(final GoogleMap map) {
+
+        Log.d(TAG, "onMapReady");
+        if (map == null) {
+            Log.d("", "Map Fragment Not Found or no Map in it!!");
+        }
+        LatLng CENTER = mSettings.returnLatLng(this);
+        try {
+            map.addMarker(new MarkerOptions()
+                    .position(CENTER)
+                    .title("sugar'n spice").snippet(""));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        map.setIndoorEnabled(true);
+        //map.setMyLocationEnabled(true);
+        map.moveCamera(CameraUpdateFactory.zoomTo(5));
+        if (CENTER != null) {
+            map.animateCamera(
+                    CameraUpdateFactory.newLatLng(CENTER), 1750,
+                    null);
+        }
+        // add circle
+        //CircleOptions circle = new CircleOptions();
+        //circle.center(CENTER).fillColor(Color.BLUE).radius(10);
+        //map.addCircle(circle);
+        map.setMapType(GoogleMap.MAP_TYPE_NORMAL);
     }
 
     protected void getCurrentLocation () {
         if (mGoogleClient == null) {
+            Log.d(TAG, "google client is null");
             mGoogleClient = new GoogleApiClient.Builder(this)
             .addConnectionCallbacks(this)
             .addOnConnectionFailedListener(this)
@@ -171,7 +235,10 @@ public class MainActivity extends Activity implements asyncResponse, GoogleApiCl
         try {
             mLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleClient);
             if (mLocation != null) {
+                Log.d(TAG, "location not null");
                 mSettings.saveCoords(this,mLocation.getLatitude(),mLocation.getLongitude());
+            } else {
+                Log.i(TAG, "mLocation is null, redirect to map to choose location manually");
             }
         } catch (SecurityException e) {
             Log.w(TAG, "need location permission");
@@ -206,6 +273,18 @@ public class MainActivity extends Activity implements asyncResponse, GoogleApiCl
         else {
             Fglobal.setChecked(true);
         }
+    }
+
+    protected void showMap () {
+        //getFragmentManager().beginTransaction().add(R.id.main,mMapFragment).commit();
+        settingsButton.setVisibility(View.GONE);
+        refreshButton.setVisibility(View.GONE);
+    }
+
+    public void hideMap () {
+        //getFragmentManager().beginTransaction().remove(mMapFragment).commit();
+        settingsButton.setVisibility(View.VISIBLE);
+        refreshButton.setVisibility(View.VISIBLE);
     }
 
     @Override

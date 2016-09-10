@@ -6,6 +6,8 @@ import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.util.Log;
 
+import com.google.android.gms.maps.model.LatLng;
+
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
@@ -49,6 +51,14 @@ public class settings {
         editor.putFloat("lat", Float.valueOf(String.valueOf(lat)));
         editor.putFloat("lon", Float.valueOf(String.valueOf(lon)));
         editor.commit();
+    }
+
+    public LatLng returnLatLng (Context context) {
+        SharedPreferences prefs = context.getSharedPreferences("myPrefs",Context.MODE_PRIVATE);
+        Float lat = prefs.getFloat("lat",0);
+        Float lon = prefs.getFloat("lon",0);
+
+        return new LatLng(lat,lon);
     }
 
 }
