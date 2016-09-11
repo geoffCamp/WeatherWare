@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.location.Location;
 import android.os.Build;
 import android.os.Bundle;
@@ -13,7 +12,6 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.content.ContextCompat;
-import android.text.Html;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -101,7 +99,7 @@ public class MainActivity extends FragmentActivity implements
 
     protected void getCurrentLocation () {
         if (mGoogleClient == null) {
-            Log.d(TAG, "google client is null");
+            //Log.d(TAG, "google client is null");
             mGoogleClient = new GoogleApiClient.Builder(this)
             .addConnectionCallbacks(this)
             .addOnConnectionFailedListener(this)
@@ -113,20 +111,20 @@ public class MainActivity extends FragmentActivity implements
 
     @Override
     public void onConnectionSuspended(int i) {
-        Log.i(TAG, Integer.toString(i));
+       // Log.i(TAG, Integer.toString(i));
     }
 
     @Override
     public void onConnected(@Nullable Bundle bundle) {
-        Log.i(TAG, "connected to google client");
+        //Log.i(TAG, "connected to google client");
 
         try {
             Location location = LocationServices.FusedLocationApi.getLastLocation(mGoogleClient);
             if (location != null) {
-                Log.d(TAG, "location not null");
+                //Log.d(TAG, "location not null");
                 onLocationChanged(location);
             } else {
-                Log.i(TAG, "mLocation is null, starting location updater");
+                //Log.i(TAG, "mLocation is null, starting location updater");
                 LocationRequest locReq = new LocationRequest();
                 locReq.create();
                 locReq.setNumUpdates(1);
@@ -135,7 +133,7 @@ public class MainActivity extends FragmentActivity implements
                 goToPrefLoc();
             }
         } catch (SecurityException e) {
-            Log.w(TAG, "need location permission:");
+            //Log.w(TAG, "need location permission:");
             e.printStackTrace();
             Toast toast = Toast.makeText(this, "Enable location services to use WeatherWare.",Toast.LENGTH_LONG);
             toast.show();
@@ -151,13 +149,13 @@ public class MainActivity extends FragmentActivity implements
 
     @Override
     public void onLocationChanged(Location location) {
-        Log.i(TAG,"location updated");
+        //Log.i(TAG,"location updated");
         mMapUtility.setPointAt(this,new LatLng(location.getLatitude(),location.getLongitude()));
     }
 
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
-        Log.i(TAG, "connection to google failed");
+        //Log.i(TAG, "connection to google failed");
     }
 
     protected void showMap () {

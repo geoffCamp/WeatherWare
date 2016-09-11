@@ -6,11 +6,8 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.util.Log;
-import android.widget.Toast;
-
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -66,17 +63,17 @@ public class getWeatherData extends AsyncTask<Object, Void, JSONObject> {
                 jsonResponse = new JSONObject(responseData.toString());
                 //Log.i(TAG, responseData.toString());
             } else {
-                Log.i(TAG, "weather query gave bad response code");
+                //Log.i(TAG, "weather query gave bad response code");
             }
         }
         catch(MalformedURLException e){ //if url object fails do this
-            Log.e(TAG, "MalFormedException caught: ", e);
+            //Log.e(TAG, "MalFormedException caught: ", e);
         }
         catch(IOException e ) {
-            Log.e(TAG, "IOException caught: ", e);
+            //Log.e(TAG, "IOException caught: ", e);
         }
         catch(Exception e) { //Exception is a class. generic exception for all other errors
-            Log.e(TAG, "Exception caught: ", e);
+            //Log.e(TAG, "Exception caught: ", e);
         }
 
         if (jsonResponse == null) {
@@ -90,7 +87,7 @@ public class getWeatherData extends AsyncTask<Object, Void, JSONObject> {
     @Override
     protected void onPostExecute(JSONObject result) {
         try {
-            Log.d(TAG,result.toString());
+            //.d(TAG,result.toString());
             int code = Integer.parseInt(result.getString("cod"));
             if(code != 200){
                 String output = "failed";

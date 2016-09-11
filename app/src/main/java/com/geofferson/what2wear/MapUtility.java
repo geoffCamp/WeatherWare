@@ -1,6 +1,5 @@
 package com.geofferson.what2wear;
 
-import android.content.Context;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -24,7 +23,7 @@ public class MapUtility {
             switch (GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable(context)) {
                 case ConnectionResult.SUCCESS:
                     context.mMapFragment = (MapFragment) context.getFragmentManager().findFragmentById(R.id.map);
-                    Log.d(TAG, "calling getMapAsync");
+                    //Log.d(TAG, "calling getMapAsync");
                     context.mMapFragment.getMapAsync(context);
                     break;
                 case ConnectionResult.SERVICE_MISSING:
@@ -37,18 +36,18 @@ public class MapUtility {
 
             }
         } catch (Exception e) {
-            Log.d(TAG, "map set up failed");
+            //Log.d(TAG, "map set up failed");
             Toast toast = Toast.makeText(context, "Google Play Services unavailable.",Toast.LENGTH_LONG);
             toast.show();
         }
     }
 
     protected void mapReady(GoogleMap map, final MainActivity context) {
-        Log.d(TAG, "onMapReady");
+        //Log.d(TAG, "onMapReady");
         context.mMap = map;
 
         if (map == null) {
-            Log.d("", "Map Fragment Not Found or no Map in it!!");
+            //Log.d("", "Map Fragment Not Found or no Map in it!!");
         } else {
             context.mGoogleClient.connect();
 
