@@ -2,6 +2,7 @@ package com.geofferson.what2wear;
 
 import android.content.Context;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
@@ -37,6 +38,8 @@ public class MapUtility {
             }
         } catch (Exception e) {
             Log.d(TAG, "map set up failed");
+            Toast toast = Toast.makeText(context, "Google Play Services unavailable.",Toast.LENGTH_LONG);
+            toast.show();
         }
     }
 
@@ -56,8 +59,6 @@ public class MapUtility {
                     setPointAt(context,latLng);
                 }
             });
-            //LatLng pos = context.mSettings.returnLatLng(context);
-            //setPointAt(context, pos);
             map.setIndoorEnabled(true);
             //map.setMyLocationEnabled(true);
             map.setMapType(GoogleMap.MAP_TYPE_NORMAL);
@@ -69,11 +70,11 @@ public class MapUtility {
         try {
             context.mMap.addMarker(new MarkerOptions()
                 .position(point)
-                .title("marker"));
+                .title("how dare you"));
         } catch (Exception e) {
             e.printStackTrace();
         }
-        context.mMap.moveCamera(CameraUpdateFactory.zoomTo(5));
+        context.mMap.moveCamera(CameraUpdateFactory.zoomTo(10));
         context.mMap.animateCamera(
                 CameraUpdateFactory.newLatLng(point), 1750, null);
         context.reloadWeatherData();

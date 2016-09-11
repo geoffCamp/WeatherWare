@@ -46,7 +46,7 @@
         android:textSize="16sp" />
 </LinearLayout>
 
-    <Button
+    <!--<Button
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:text="Refresh"
@@ -70,7 +70,7 @@
         android:textColor="@color/buttonText"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true" />-->
 
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
         android:name="com.google.android.gms.maps.MapFragment"
@@ -86,24 +86,29 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Back"
+                android:background="@color/buttonBG"
+                android:textColor="@color/buttonText"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
                 android:id="@+id/mapBack"/>
 
             <RadioGroup
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="14dp"
                 android:id="@+id/radioGroup">
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
                     android:id="@+id/metric"
                     android:text="C"/>
-
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/imperial"
+                    android:layout_marginLeft="15dp"
                     android:text="F"/>
             </RadioGroup>
         </LinearLayout>

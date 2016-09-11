@@ -48,6 +48,9 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 import org.json.JSONObject;
 
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.Map;
 
 public class MainActivity extends FragmentActivity implements
@@ -61,10 +64,7 @@ public class MainActivity extends FragmentActivity implements
     protected GoogleMap mMap;
     protected settings mSettings = new settings();
     protected SharedPreferences mPrefs;
-    protected Dialog settingsDialoge;
-    protected Dialog referenceDialog;
     protected GoogleApiClient mGoogleClient;
-    protected Location mLocation;
     protected Button refreshButton;
     protected Button settingsButton;
     protected Button mapBackBtn;
@@ -77,39 +77,24 @@ public class MainActivity extends FragmentActivity implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        /*if (!isInternetWorking()) {
+            Toast toast = Toast.makeText(this, "Connect to the interwebs to use WeatherWare.",Toast.LENGTH_LONG);
+            toast.show();
+            return;
+        }*/
         if (Build.VERSION.SDK_INT == Build.VERSION_CODES.M ) {
             checkPermission();
         }
         mPrefs = getSharedPreferences("myPrefs",Context.MODE_PRIVATE);
-        // so they arent looking at nothing while location loads
-        // ing context so the class can access getsystemservice
-        //Log.i(TAG, "started get weather");
-
-
-        /*settingsDialoge = new Dialog(this);//final Dialog settingsDialog = new Dialog(this);
-        settingsDialoge.setContentView(R.layout.settings_dialoge);
-        settingsDialoge.setTitle("Settings");
-        //getPrefs(settingsDialoge);
-
-        referenceDialog = new Dialog(this);//final Dialog settingsDialog = new Dialog(this);
-        referenceDialog.setContentView(R.layout.reference_dialog);
-        referenceDialog.setTitle("Image Reference");*/
-
-        refreshButton = (Button) findViewById(R.id.refreshButton);
-        settingsButton = (Button) findViewById(R.id.settingsButton);
-        //Button settingsConfirm = (Button) settingsDialoge.findViewById(R.id.settingsConfirm);
-        //Button settingsCancel = (Button) settingsDialoge.findViewById(R.id.settingsCancel);
-        //Button settingsRef = (Button) settingsDialoge.findViewById(R.id.refBtn);
-        //Button referenceCancel = (Button) referenceDialog.findViewById(R.id.refCancel);
-
+        /*refreshButton = (Button) findViewById(R.id.refreshButton);
+        settingsButton = (Button) findViewById(R.id.settingsButton);*/
         metricBtn = (RadioButton) findViewById(R.id.metric);
         imperialBtn = (RadioButton) findViewById(R.id.imperial);
         mapBackBtn = (Button) findViewById(R.id.mapBack);
         mMapView = findViewById(R.id.map);
         hideMap();
 
-        refreshButton.setOnClickListener(new View.OnClickListener() {
+        /*refreshButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 LatLng pos = mSettings.returnLatLng(MainActivity.this);
@@ -122,62 +107,6 @@ public class MainActivity extends FragmentActivity implements
             public void onClick (View v) {
                 //settingsDialoge.show();
                 showMap();
-            }
-        });
-
-        /*settingsConfirm.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick (View v) {
-                String units = "metric";
-                String location;
-                TextView locationValue;
-                RadioButton C;
-                RadioButton F;
-
-                locationValue = (EditText) settingsDialoge.findViewById(R.id.location);
-                location = locationValue.getText().toString();
-
-                if (location == ""){
-                    location = "Guelph,ca";
-                }
-
-                C = (RadioButton) settingsDialoge.findViewById(R.id.metric);
-                F = (RadioButton) settingsDialoge.findViewById(R.id.imperial);
-
-                if (C.isChecked()){
-                    units = "metric";
-                }
-                else if (F.isChecked()){
-                    units = "imperial";
-                }
-
-                mSettings.saveSettings(MainActivity.this,units,location);
-                settingsDialoge.hide();
-                mAsyncTask.initiate(MainActivity.this);
-            }
-
-        });
-
-        settingsCancel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                settingsDialoge.hide();
-                //getPrefs(settingsDialoge);
-            }
-        });
-
-        settingsRef.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                settingsDialoge.hide();
-                referenceDialog.show();
-            }
-        });*/
-
-        /*referenceCancel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                referenceDialog.hide();
             }
         });*/
 
@@ -236,10 +165,10 @@ public class MainActivity extends FragmentActivity implements
         Log.i(TAG, "connected to google client");
 
         try {
-            mLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleClient);
-            if (mLocation != null) {
+            Location location = LocationServices.FusedLocationApi.getLastLocation(mGoogleClient);
+            if (location != null) {
                 Log.d(TAG, "location not null");
-                onLocationChanged(mLocation);
+                onLocationChanged(location);
             } else {
                 Log.i(TAG, "mLocation is null, starting location updater");
                 LocationRequest locReq = new LocationRequest();
@@ -253,6 +182,8 @@ public class MainActivity extends FragmentActivity implements
         } catch (SecurityException e) {
             Log.w(TAG, "need location permission:");
             e.printStackTrace();
+            Toast toast = Toast.makeText(this, "Enable location services to use WeatherWare.",Toast.LENGTH_LONG);
+            toast.show();
             //switch to map to choose location manually
         }
     }
@@ -266,8 +197,7 @@ public class MainActivity extends FragmentActivity implements
     @Override
     public void onLocationChanged(Location location) {
         Log.i(TAG,"location updated");
-        mLocation = location;
-        mMapUtility.setPointAt(this,new LatLng(mLocation.getLatitude(),mLocation.getLongitude()));
+        mMapUtility.setPointAt(this,new LatLng(location.getLatitude(),location.getLongitude()));
     }
 
     @Override
@@ -275,39 +205,17 @@ public class MainActivity extends FragmentActivity implements
         Log.i(TAG, "connection to google failed");
     }
 
-    /*protected void getPrefs(Dialog dialog){
-        String unitsGlobal = mPrefs.getString("units","metric");
-        String locationGlobal = mPrefs.getString("location","Guelph,ca");
-
-        //Log.i(TAG,unitsGlobal);
-        //Log.i(TAG,locationGlobal);
-
-        //get pre-existing dialog values
-        EditText locationValueGlobal = (EditText) settingsDialoge.findViewById(R.id.location);
-        RadioButton Cglobal = (RadioButton) settingsDialoge.findViewById(R.id.metric);
-        RadioButton Fglobal = (RadioButton) settingsDialoge.findViewById(R.id.imperial);
-
-        //set dialog values
-        locationValueGlobal.setText(locationGlobal);
-        if (unitsGlobal.equals("metric")){
-            Cglobal.setChecked(true);
-        }
-        else {
-            Fglobal.setChecked(true);
-        }
-    }*/
-
     protected void showMap () {
         mMapView.setVisibility(View.VISIBLE);
 
-        settingsButton.setVisibility(View.GONE);
-        refreshButton.setVisibility(View.GONE);
+        //settingsButton.setVisibility(View.GONE);
+        //refreshButton.setVisibility(View.GONE);
     }
 
     public void hideMap () {
         mMapView.setVisibility(View.GONE);
-        settingsButton.setVisibility(View.VISIBLE);
-        refreshButton.setVisibility(View.VISIBLE);
+        //settingsButton.setVisibility(View.VISIBLE);
+        //refreshButton.setVisibility(View.VISIBLE);
     }
 
     @Override
@@ -317,15 +225,12 @@ public class MainActivity extends FragmentActivity implements
             textField.setText("Network Error :(");
         }
         if (output.equals("failed")){
-            Toast toast = Toast.makeText(this, "Location failed to load. Try a different search. (E.g. 'toronto', 'toronto,ca')",Toast.LENGTH_LONG);
+            Toast toast = Toast.makeText(this, "Location failed to load. Try a different search location (settings -> click on map).",Toast.LENGTH_LONG);
             toast.show();
         }
         else{
 
             final ImageView imageField = (ImageView) findViewById(R.id.imageViewBG);
-            //final TextView refTitle = (TextView) referenceDialog.findViewById(R.id.refImageName);
-            //final TextView refAuthor = (TextView) referenceDialog.findViewById(R.id.refAuthor);
-            //final TextView refURL = (TextView) referenceDialog.findViewById(R.id.refURL);
             final ListView clothesList = (ListView) findViewById(R.id.clothesList);
             //final TextView itemText = (TextView) findViewById(R.layout.listitem.listText);
 
@@ -357,12 +262,34 @@ public class MainActivity extends FragmentActivity implements
             //itemText.setTextColor(Color.parseColor(weatherInfo[10]));
             int imageId = getResources().getIdentifier(weatherInfo[6], "drawable", getPackageName());
             imageField.setImageResource(imageId);
-            //refTitle.setText(weatherInfo[7]);
-            //refAuthor.setText("by "+weatherInfo[8]);
-            //refURL.setText(weatherInfo[9]);
         }
 
     }
+
+    public void checkPermission(){
+        if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED ||
+                ContextCompat.checkSelfPermission(this,android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED
+                ){//Can add more as per requirement
+
+            ActivityCompat.requestPermissions(this,
+                    new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION,android.Manifest.permission.ACCESS_COARSE_LOCATION},
+                    123);
+        }
+    }
+
+    /*public boolean isInternetWorking() {
+        boolean success = false;
+        try {
+            URL url = new URL("https://google.com");
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            connection.setConnectTimeout(10000);
+            connection.connect();
+            success = connection.getResponseCode() == 200;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return success;
+    }*/
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -380,20 +307,16 @@ public class MainActivity extends FragmentActivity implements
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            showMap();
+            return true;
+        }
+        if (id == R.id.menu_refresh) {
+            LatLng pos = mSettings.returnLatLng(MainActivity.this);
+            mMapUtility.setPointAt(MainActivity.this,pos);
             return true;
         }
 
         return super.onOptionsItemSelected(item);
     }
 
-    public void checkPermission(){
-        if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED ||
-                ContextCompat.checkSelfPermission(this,android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED
-                ){//Can add more as per requirement
-
-            ActivityCompat.requestPermissions(this,
-                    new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION,android.Manifest.permission.ACCESS_COARSE_LOCATION},
-                    123);
-        }
-    }
 }

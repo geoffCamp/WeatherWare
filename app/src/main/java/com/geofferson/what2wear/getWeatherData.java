@@ -67,10 +67,6 @@ public class getWeatherData extends AsyncTask<Object, Void, JSONObject> {
                 //Log.i(TAG, responseData.toString());
             } else {
                 Log.i(TAG, "weather query gave bad response code");
-                //Toast toast = Toast.makeText(context, "WeatherWare failed to establish connection. Please check connection status.",Toast.LENGTH_LONG);
-                //toast.show();
-                jsonResponse = new JSONObject("{\"cod\":\"191919\"}");
-
             }
         }
         catch(MalformedURLException e){ //if url object fails do this
@@ -83,6 +79,13 @@ public class getWeatherData extends AsyncTask<Object, Void, JSONObject> {
             Log.e(TAG, "Exception caught: ", e);
         }
 
+        if (jsonResponse == null) {
+            Toast toast = Toast.makeText(context, "WeatherWare failed to establish connection. Please check connection status.",Toast.LENGTH_LONG);
+            toast.show();
+            try {
+                jsonResponse = new JSONObject("{\"cod\":\"191919\"}");
+            } catch (Exception e) {}
+        }
         return jsonResponse;
     }
 
