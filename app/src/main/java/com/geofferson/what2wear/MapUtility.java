@@ -40,34 +40,43 @@ public class MapUtility {
         }
     }
 
-    protected void mapReady(GoogleMap map, MainActivity context) {
+    protected void mapReady(GoogleMap map, final MainActivity context) {
         Log.d(TAG, "onMapReady");
         context.mMap = map;
+
         if (map == null) {
             Log.d("", "Map Fragment Not Found or no Map in it!!");
-        }
-        LatLng pos = context.mSettings.returnLatLng(context);
-        try {
-            map.addMarker(new MarkerOptions()
-                    .position(pos)
-                    .title("sugar'n spice").snippet(""));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        } else {
+            context.mGoogleClient.connect();
 
-        map.setIndoorEnabled(true);
-        //map.setMyLocationEnabled(true);
-
-        map.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+            context.mMap.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
+                @Override
+                public void onMapClick(LatLng latLng) {
+                    context.mMap.clear();
+                    setPointAt(context,latLng);
+                }
+            });
+            //LatLng pos = context.mSettings.returnLatLng(context);
+            //setPointAt(context, pos);
+            map.setIndoorEnabled(true);
+            //map.setMyLocationEnabled(true);
+            map.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+        }
     }
 
     protected void setPointAt (MainActivity context, LatLng point) {
-        context.mMap.addMarker(new MarkerOptions()
+        context.mSettings.saveCoords(context,point.latitude,point.longitude);
+        try {
+            context.mMap.addMarker(new MarkerOptions()
                 .position(point)
                 .title("marker"));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         context.mMap.moveCamera(CameraUpdateFactory.zoomTo(5));
         context.mMap.animateCamera(
                 CameraUpdateFactory.newLatLng(point), 1750, null);
+        context.reloadWeatherData();
     }
 
 }

@@ -59,6 +59,7 @@ public class MainActivity extends FragmentActivity implements
     protected View mMapView;
     protected GoogleMap mMap;
     protected settings mSettings = new settings();
+    protected SharedPreferences mPrefs;
     protected Dialog settingsDialoge;
     protected Dialog referenceDialog;
     protected GoogleApiClient mGoogleClient;
@@ -76,12 +77,12 @@ public class MainActivity extends FragmentActivity implements
         if (Build.VERSION.SDK_INT == Build.VERSION_CODES.M ) {
             checkPermission();
         }
-
-        mAsyncTask.initiate(MainActivity.this);//pass
+        mPrefs = getSharedPreferences("myPrefs",Context.MODE_PRIVATE);
+        // so they arent looking at nothing while location loads
         // ing context so the class can access getsystemservice
         //Log.i(TAG, "started get weather");
 
-        getCurrentLocation();
+
         settingsDialoge = new Dialog(this);//final Dialog settingsDialog = new Dialog(this);
         settingsDialoge.setContentView(R.layout.settings_dialoge);
         settingsDialoge.setTitle("Settings");
@@ -104,7 +105,8 @@ public class MainActivity extends FragmentActivity implements
         refreshButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mAsyncTask.initiate(MainActivity.this);
+                LatLng pos = mSettings.returnLatLng(MainActivity.this);
+                mMapUtility.setPointAt(MainActivity.this,pos);
             }
         });
 
@@ -172,7 +174,11 @@ public class MainActivity extends FragmentActivity implements
             }
         });
 
-        mMapUtility.setUpMap(this);
+        getCurrentLocation();
+    }
+
+    protected void reloadWeatherData () {
+        mAsyncTask.initiate(MainActivity.this);
     }
 
     @Override
@@ -189,7 +195,7 @@ public class MainActivity extends FragmentActivity implements
             .addApi(LocationServices.API)
             .build();
         }
-        mGoogleClient.connect();
+        mMapUtility.setUpMap(this);
     }
 
     @Override
@@ -200,16 +206,23 @@ public class MainActivity extends FragmentActivity implements
     @Override
     public void onConnected(@Nullable Bundle bundle) {
         Log.i(TAG, "connected to google client");
+
         try {
             mLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleClient);
             if (mLocation != null) {
                 Log.d(TAG, "location not null");
-                mSettings.saveCoords(this, mLocation.getLatitude(), mLocation.getLongitude());
+                onLocationChanged(mLocation);
             } else {
                 Log.i(TAG, "mLocation is null, starting location updater");
                 LocationRequest locReq = new LocationRequest();
                 locReq.create();
+                locReq.setNumUpdates(1);
                 LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleClient, locReq, this);
+
+                //can now set default location
+                Float firstLat =mPrefs.getFloat("lat",0);
+                Float firstLon = mPrefs.getFloat("lon",0);
+                mMapUtility.setPointAt(this,new LatLng(firstLat,firstLon));
             }
         } catch (SecurityException e) {
             Log.w(TAG, "need location permission:");
@@ -222,7 +235,6 @@ public class MainActivity extends FragmentActivity implements
     public void onLocationChanged(Location location) {
         Log.i(TAG,"location updated");
         mLocation = location;
-        mSettings.saveCoords(this,mLocation.getLatitude(),mLocation.getLongitude());
         mMapUtility.setPointAt(this,new LatLng(mLocation.getLatitude(),mLocation.getLongitude()));
     }
 
@@ -232,9 +244,8 @@ public class MainActivity extends FragmentActivity implements
     }
 
     protected void getPrefs(Dialog dialog){
-        SharedPreferences prefs = getSharedPreferences("myPrefs",Context.MODE_PRIVATE);
-        String unitsGlobal = prefs.getString("units","metric");
-        String locationGlobal = prefs.getString("location","Guelph,ca");
+        String unitsGlobal = mPrefs.getString("units","metric");
+        String locationGlobal = mPrefs.getString("location","Guelph,ca");
 
         //Log.i(TAG,unitsGlobal);
         //Log.i(TAG,locationGlobal);
