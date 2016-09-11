@@ -80,8 +80,6 @@ public class getWeatherData extends AsyncTask<Object, Void, JSONObject> {
         }
 
         if (jsonResponse == null) {
-            Toast toast = Toast.makeText(context, "WeatherWare failed to establish connection. Please check connection status.",Toast.LENGTH_LONG);
-            toast.show();
             try {
                 jsonResponse = new JSONObject("{\"cod\":\"191919\"}");
             } catch (Exception e) {}

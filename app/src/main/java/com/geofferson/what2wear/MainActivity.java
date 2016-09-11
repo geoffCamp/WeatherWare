@@ -171,15 +171,11 @@ public class MainActivity extends FragmentActivity implements
     @Override
     public void processFinish(String output){
         final TextView textField = (TextView) findViewById(R.id.results);
-        if (output.equals("failConnect")){
+        if (output.equals("failConnect") || output.equals("failed")){
             textField.setText("Network Error :(");
-        }
-        if (output.equals("failed")){
-            Toast toast = Toast.makeText(this, "Location failed to load. Try a different search location (settings -> click on map).",Toast.LENGTH_LONG);
+            Toast toast = Toast.makeText(this, "WeatherWare can't find the internet.",Toast.LENGTH_LONG);
             toast.show();
-        }
-        else{
-
+        } else{
             final ImageView imageField = (ImageView) findViewById(R.id.imageViewBG);
             final ListView clothesList = (ListView) findViewById(R.id.clothesList);
             //final TextView itemText = (TextView) findViewById(R.layout.listitem.listText);
