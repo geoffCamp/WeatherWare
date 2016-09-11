@@ -15,6 +15,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Build;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
@@ -66,6 +67,9 @@ public class MainActivity extends FragmentActivity implements
     protected Location mLocation;
     protected Button refreshButton;
     protected Button settingsButton;
+    protected Button mapBackBtn;
+    protected RadioButton metricBtn;
+    protected RadioButton imperialBtn;
 
     private static final String TAG = MainActivity.class.getSimpleName();
 
@@ -83,22 +87,25 @@ public class MainActivity extends FragmentActivity implements
         //Log.i(TAG, "started get weather");
 
 
-        settingsDialoge = new Dialog(this);//final Dialog settingsDialog = new Dialog(this);
+        /*settingsDialoge = new Dialog(this);//final Dialog settingsDialog = new Dialog(this);
         settingsDialoge.setContentView(R.layout.settings_dialoge);
         settingsDialoge.setTitle("Settings");
-        getPrefs(settingsDialoge);
+        //getPrefs(settingsDialoge);
 
         referenceDialog = new Dialog(this);//final Dialog settingsDialog = new Dialog(this);
         referenceDialog.setContentView(R.layout.reference_dialog);
-        referenceDialog.setTitle("Image Reference");
+        referenceDialog.setTitle("Image Reference");*/
 
         refreshButton = (Button) findViewById(R.id.refreshButton);
         settingsButton = (Button) findViewById(R.id.settingsButton);
-        Button settingsConfirm = (Button) settingsDialoge.findViewById(R.id.settingsConfirm);
-        Button settingsCancel = (Button) settingsDialoge.findViewById(R.id.settingsCancel);
-        Button settingsRef = (Button) settingsDialoge.findViewById(R.id.refBtn);
-        Button referenceCancel = (Button) referenceDialog.findViewById(R.id.refCancel);
+        //Button settingsConfirm = (Button) settingsDialoge.findViewById(R.id.settingsConfirm);
+        //Button settingsCancel = (Button) settingsDialoge.findViewById(R.id.settingsCancel);
+        //Button settingsRef = (Button) settingsDialoge.findViewById(R.id.refBtn);
+        //Button referenceCancel = (Button) referenceDialog.findViewById(R.id.refCancel);
 
+        metricBtn = (RadioButton) findViewById(R.id.metric);
+        imperialBtn = (RadioButton) findViewById(R.id.imperial);
+        mapBackBtn = (Button) findViewById(R.id.mapBack);
         mMapView = findViewById(R.id.map);
         hideMap();
 
@@ -113,12 +120,12 @@ public class MainActivity extends FragmentActivity implements
         settingsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick (View v) {
-                settingsDialoge.show();
+                //settingsDialoge.show();
                 showMap();
             }
         });
 
-        settingsConfirm.setOnClickListener(new View.OnClickListener(){
+        /*settingsConfirm.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick (View v) {
                 String units = "metric";
@@ -155,7 +162,7 @@ public class MainActivity extends FragmentActivity implements
             @Override
             public void onClick(View v) {
                 settingsDialoge.hide();
-                getPrefs(settingsDialoge);
+                //getPrefs(settingsDialoge);
             }
         });
 
@@ -165,12 +172,33 @@ public class MainActivity extends FragmentActivity implements
                 settingsDialoge.hide();
                 referenceDialog.show();
             }
-        });
+        });*/
 
-        referenceCancel.setOnClickListener(new View.OnClickListener() {
+        /*referenceCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 referenceDialog.hide();
+            }
+        });*/
+
+        mapBackBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                hideMap();
+            }
+        });
+        metricBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mSettings.saveSettings(MainActivity.this,"metric","");
+                goToPrefLoc();
+            }
+        });
+        imperialBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mSettings.saveSettings(MainActivity.this,"imperial","");
+                goToPrefLoc();
             }
         });
 
@@ -220,15 +248,19 @@ public class MainActivity extends FragmentActivity implements
                 LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleClient, locReq, this);
 
                 //can now set default location
-                Float firstLat =mPrefs.getFloat("lat",0);
-                Float firstLon = mPrefs.getFloat("lon",0);
-                mMapUtility.setPointAt(this,new LatLng(firstLat,firstLon));
+                goToPrefLoc();
             }
         } catch (SecurityException e) {
             Log.w(TAG, "need location permission:");
             e.printStackTrace();
             //switch to map to choose location manually
         }
+    }
+
+    protected void goToPrefLoc () {
+        Float firstLat =mPrefs.getFloat("lat",0);
+        Float firstLon = mPrefs.getFloat("lon",0);
+        mMapUtility.setPointAt(this,new LatLng(firstLat,firstLon));
     }
 
     @Override
@@ -243,7 +275,7 @@ public class MainActivity extends FragmentActivity implements
         Log.i(TAG, "connection to google failed");
     }
 
-    protected void getPrefs(Dialog dialog){
+    /*protected void getPrefs(Dialog dialog){
         String unitsGlobal = mPrefs.getString("units","metric");
         String locationGlobal = mPrefs.getString("location","Guelph,ca");
 
@@ -263,10 +295,11 @@ public class MainActivity extends FragmentActivity implements
         else {
             Fglobal.setChecked(true);
         }
-    }
+    }*/
 
     protected void showMap () {
         mMapView.setVisibility(View.VISIBLE);
+
         settingsButton.setVisibility(View.GONE);
         refreshButton.setVisibility(View.GONE);
     }
@@ -290,9 +323,9 @@ public class MainActivity extends FragmentActivity implements
         else{
 
             final ImageView imageField = (ImageView) findViewById(R.id.imageViewBG);
-            final TextView refTitle = (TextView) referenceDialog.findViewById(R.id.refImageName);
-            final TextView refAuthor = (TextView) referenceDialog.findViewById(R.id.refAuthor);
-            final TextView refURL = (TextView) referenceDialog.findViewById(R.id.refURL);
+            //final TextView refTitle = (TextView) referenceDialog.findViewById(R.id.refImageName);
+            //final TextView refAuthor = (TextView) referenceDialog.findViewById(R.id.refAuthor);
+            //final TextView refURL = (TextView) referenceDialog.findViewById(R.id.refURL);
             final ListView clothesList = (ListView) findViewById(R.id.clothesList);
             //final TextView itemText = (TextView) findViewById(R.layout.listitem.listText);
 
@@ -319,13 +352,14 @@ public class MainActivity extends FragmentActivity implements
             //clothesList.setAdapter(arrayAdapter);
 
             textField.setText("Feels like "+weatherInfo[1]+weatherInfo[2]+" \n"+weatherInfo[3]+"\n"+weatherInfo[4]+", "+weatherInfo[5]);//weatherInfo[0] +
+            mSettings.saveSettings(this,"",weatherInfo[4]+", "+weatherInfo[5]);
             textField.setTextColor(Color.parseColor(weatherInfo[10]));
             //itemText.setTextColor(Color.parseColor(weatherInfo[10]));
             int imageId = getResources().getIdentifier(weatherInfo[6], "drawable", getPackageName());
             imageField.setImageResource(imageId);
-            refTitle.setText(weatherInfo[7]);
-            refAuthor.setText("by "+weatherInfo[8]);
-            refURL.setText(weatherInfo[9]);
+            //refTitle.setText(weatherInfo[7]);
+            //refAuthor.setText("by "+weatherInfo[8]);
+            //refURL.setText(weatherInfo[9]);
         }
 
     }

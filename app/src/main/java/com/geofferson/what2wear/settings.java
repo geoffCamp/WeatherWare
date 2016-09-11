@@ -41,8 +41,12 @@ public class settings {
 
     protected void saveSettings (Context context, String units, String location) {
         SharedPreferences.Editor editor = context.getSharedPreferences("myPrefs", context.MODE_PRIVATE).edit();
-        editor.putString("units", units);
-        editor.putString("location",location);
+        if (units != "") {
+            editor.putString("units", units);
+        }
+        if (location != "") {
+            editor.putString("location", location);
+        }
         editor.commit();
     }
 
