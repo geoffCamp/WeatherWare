@@ -9,6 +9,8 @@
     <color name="buttonText">#ffffffff</color>
     <color name="background">#FF4A4A4A</color>
     <color name="bodyText">#dddddd</color>
+    <color name="titleText">#eeeeee</color>
+    <color name="titleBG">#383838</color>
 
     <string name="baseURL">http://api.openweathermap.org/data/2.5/weather?</string>
     <string name="weatherKey">b618f805ae85ec04f8b04299e1f1683e</string>

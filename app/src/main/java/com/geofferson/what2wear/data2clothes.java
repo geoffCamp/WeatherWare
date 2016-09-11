@@ -150,10 +150,10 @@ public class data2clothes {
         int[] rainCoat = {202,312,314,502,503,504,522,531};
         //int[] waterWinter = {511,615,616};
 
-        if (feelsLike > 20){
+        if (feelsLike > 18){
             clothes = "T shirt & Shorts";//"It's a nice day; t-shirt and shorts
         }
-        else if( feelsLike <= 20 && feelsLike > 10 ){
+        else if( feelsLike <= 18 && feelsLike > 10 ){
             clothes = "Long sleeves";
         }
         else if(feelsLike <= 10 && feelsLike > 3){
