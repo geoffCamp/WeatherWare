@@ -1,21 +1,12 @@
 package com.geofferson.what2wear;
 
-import android.app.Activity;
-import android.app.Dialog;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
-import android.graphics.drawable.Drawable;
-import android.location.Criteria;
 import android.location.Location;
-import android.location.LocationListener;
-import android.location.LocationManager;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.Build;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
@@ -27,7 +18,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RadioButton;
@@ -35,23 +25,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.*;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
-//import com.google.android.gms.common.api.GoogleApiClient;
-//import com.google.android.gms.location.LocationServices;
-
-import org.json.JSONObject;
-
-import java.io.IOException;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.util.Map;
 
 public class MainActivity extends FragmentActivity implements
         asyncResponse, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, OnMapReadyCallback, com.google.android.gms.location.LocationListener{
@@ -65,8 +44,6 @@ public class MainActivity extends FragmentActivity implements
     protected settings mSettings = new settings();
     protected SharedPreferences mPrefs;
     protected GoogleApiClient mGoogleClient;
-    protected Button refreshButton;
-    protected Button settingsButton;
     protected Button mapBackBtn;
     protected RadioButton metricBtn;
     protected RadioButton imperialBtn;
@@ -77,38 +54,15 @@ public class MainActivity extends FragmentActivity implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        /*if (!isInternetWorking()) {
-            Toast toast = Toast.makeText(this, "Connect to the interwebs to use WeatherWare.",Toast.LENGTH_LONG);
-            toast.show();
-            return;
-        }*/
         if (Build.VERSION.SDK_INT == Build.VERSION_CODES.M ) {
             checkPermission();
         }
         mPrefs = getSharedPreferences("myPrefs",Context.MODE_PRIVATE);
-        /*refreshButton = (Button) findViewById(R.id.refreshButton);
-        settingsButton = (Button) findViewById(R.id.settingsButton);*/
         metricBtn = (RadioButton) findViewById(R.id.metric);
         imperialBtn = (RadioButton) findViewById(R.id.imperial);
         mapBackBtn = (Button) findViewById(R.id.mapBack);
         mMapView = findViewById(R.id.map);
         hideMap();
-
-        /*refreshButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                LatLng pos = mSettings.returnLatLng(MainActivity.this);
-                mMapUtility.setPointAt(MainActivity.this,pos);
-            }
-        });
-
-        settingsButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick (View v) {
-                //settingsDialoge.show();
-                showMap();
-            }
-        });*/
 
         mapBackBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -175,7 +129,6 @@ public class MainActivity extends FragmentActivity implements
                 locReq.create();
                 locReq.setNumUpdates(1);
                 LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleClient, locReq, this);
-
                 //can now set default location
                 goToPrefLoc();
             }
@@ -207,15 +160,10 @@ public class MainActivity extends FragmentActivity implements
 
     protected void showMap () {
         mMapView.setVisibility(View.VISIBLE);
-
-        //settingsButton.setVisibility(View.GONE);
-        //refreshButton.setVisibility(View.GONE);
     }
 
     public void hideMap () {
         mMapView.setVisibility(View.GONE);
-        //settingsButton.setVisibility(View.VISIBLE);
-        //refreshButton.setVisibility(View.VISIBLE);
     }
 
     @Override
@@ -276,20 +224,6 @@ public class MainActivity extends FragmentActivity implements
                     123);
         }
     }
-
-    /*public boolean isInternetWorking() {
-        boolean success = false;
-        try {
-            URL url = new URL("https://google.com");
-            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-            connection.setConnectTimeout(10000);
-            connection.connect();
-            success = connection.getResponseCode() == 200;
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return success;
-    }*/
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
