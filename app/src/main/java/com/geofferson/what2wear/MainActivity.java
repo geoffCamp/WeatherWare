@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.location.Criteria;
@@ -12,10 +13,13 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
+import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -32,6 +36,7 @@ import android.widget.Toast;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.*;
 import com.google.android.gms.maps.MapFragment;
@@ -45,12 +50,14 @@ import org.json.JSONObject;
 import java.util.Map;
 
 public class MainActivity extends FragmentActivity implements
-        asyncResponse, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, OnMapReadyCallback{
+        asyncResponse, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, OnMapReadyCallback, com.google.android.gms.location.LocationListener{
 
     protected getWeatherData mAsyncTask = new getWeatherData(MainActivity.this,MainActivity.this);
     protected data2clothes mData2clothes = new data2clothes();
+    protected MapUtility mMapUtility = new MapUtility();
     protected MapFragment mMapFragment;
     protected View mMapView;
+    protected GoogleMap mMap;
     protected settings mSettings = new settings();
     protected Dialog settingsDialoge;
     protected Dialog referenceDialog;
@@ -65,6 +72,10 @@ public class MainActivity extends FragmentActivity implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        if (Build.VERSION.SDK_INT == Build.VERSION_CODES.M ) {
+            checkPermission();
+        }
 
         mAsyncTask.initiate(MainActivity.this);//pass
         // ing context so the class can access getsystemservice
@@ -161,65 +172,12 @@ public class MainActivity extends FragmentActivity implements
             }
         });
 
-        setUpMap();
-    }
-
-
-
-    private void setUpMap () {
-        try {
-            switch (GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable(this)) {
-                case ConnectionResult.SUCCESS:
-                    mMapFragment = (MapFragment) getFragmentManager().findFragmentById(R.id.map);
-                    Log.d(TAG, "calling getMapAsync");
-                    mMapFragment.getMapAsync(this);
-                    break;
-                case ConnectionResult.SERVICE_MISSING:
-
-                    break;
-                case ConnectionResult.SERVICE_VERSION_UPDATE_REQUIRED:
-
-                    break;
-                default:
-
-            }
-        } catch (Exception e) {
-            Log.d(TAG, "map set up failed");
-        }
+        mMapUtility.setUpMap(this);
     }
 
     @Override
     public void onMapReady(final GoogleMap map) {
-
-        Log.d(TAG, "onMapReady");
-        if (map == null) {
-            Log.d("", "Map Fragment Not Found or no Map in it!!");
-        }
-        map.addMarker(new MarkerOptions()
-            .position(new LatLng(37.7750, -122.4183))
-            .title("marker"));
-        LatLng pos = mSettings.returnLatLng(this);
-        try {
-            map.addMarker(new MarkerOptions()
-                    .position(pos)
-                    .title("sugar'n spice").snippet(""));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        map.setIndoorEnabled(true);
-        //map.setMyLocationEnabled(true);
-        map.moveCamera(CameraUpdateFactory.zoomTo(5));
-        if (pos != null) {
-            map.animateCamera(
-                    CameraUpdateFactory.newLatLng(pos), 1750,
-                    null);
-        }
-        // add circle
-        //CircleOptions circle = new CircleOptions();
-        //circle.center(CENTER).fillColor(Color.BLUE).radius(10);
-        //map.addCircle(circle);
-        map.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+        mMapUtility.mapReady(map,this);
     }
 
     protected void getCurrentLocation () {
@@ -246,15 +204,26 @@ public class MainActivity extends FragmentActivity implements
             mLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleClient);
             if (mLocation != null) {
                 Log.d(TAG, "location not null");
-                mSettings.saveCoords(this,mLocation.getLatitude(),mLocation.getLongitude());
+                mSettings.saveCoords(this, mLocation.getLatitude(), mLocation.getLongitude());
             } else {
-                Log.i(TAG, "mLocation is null, redirect to map to choose location manually");
+                Log.i(TAG, "mLocation is null, starting location updater");
+                LocationRequest locReq = new LocationRequest();
+                locReq.create();
+                LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleClient, locReq, this);
             }
         } catch (SecurityException e) {
-            Log.w(TAG, "need location permission");
+            Log.w(TAG, "need location permission:");
+            e.printStackTrace();
             //switch to map to choose location manually
         }
+    }
 
+    @Override
+    public void onLocationChanged(Location location) {
+        Log.i(TAG,"location updated");
+        mLocation = location;
+        mSettings.saveCoords(this,mLocation.getLatitude(),mLocation.getLongitude());
+        mMapUtility.setPointAt(this,new LatLng(mLocation.getLatitude(),mLocation.getLongitude()));
     }
 
     @Override
@@ -372,4 +341,14 @@ public class MainActivity extends FragmentActivity implements
         return super.onOptionsItemSelected(item);
     }
 
+    public void checkPermission(){
+        if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED ||
+                ContextCompat.checkSelfPermission(this,android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED
+                ){//Can add more as per requirement
+
+            ActivityCompat.requestPermissions(this,
+                    new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION,android.Manifest.permission.ACCESS_COARSE_LOCATION},
+                    123);
+        }
+    }
 }
