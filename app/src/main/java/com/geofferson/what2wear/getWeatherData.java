@@ -70,10 +70,10 @@ public class getWeatherData extends AsyncTask<Object, Void, JSONObject> {
             }
         }
         catch(MalformedURLException e){ //if url object fails do this
-            Log.e(TAG, "Exception caught: ", e);
+            Log.e(TAG, "MalFormedException caught: ", e);
         }
         catch(IOException e ) {
-            Log.e(TAG, "Exception caught: ", e);
+            Log.e(TAG, "IOException caught: ", e);
         }
         catch(Exception e) { //Exception is a class. generic exception for all other errors
             Log.e(TAG, "Exception caught: ", e);

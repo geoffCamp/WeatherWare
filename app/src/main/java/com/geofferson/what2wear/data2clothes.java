@@ -146,8 +146,8 @@ public class data2clothes {
 
     protected String getClothes(){
 
-        int[] umbrellaArray = {200,201,231,232,301,302,310,311,313,321,500,501,520,521,511,615,616};
-        int[] rainCoat = {202,312,314,502,503,504,522,531};
+        Integer[] umbrellaArray = {200,201,231,232,301,302,310,311,313,321,500,501,520,521,511,615,616};
+        Integer[] rainCoat = {202,312,314,502,503,504,522,531};
         //int[] waterWinter = {511,615,616};
 
         if (feelsLike > 18){

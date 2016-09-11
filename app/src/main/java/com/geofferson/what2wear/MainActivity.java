@@ -231,11 +231,6 @@ public class MainActivity extends FragmentActivity implements
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
-        try {
-            getActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#383838")));
-            //getActionBar().setTitle(Html.fromHtml("<font color=\"white\">" + getString(R.string.app_name) + "</font>"));
-
-        } catch (Exception e) {e.printStackTrace();}
         return true;
     }
 
